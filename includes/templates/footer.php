@@ -6,51 +6,58 @@
 
         <!-- Grid row -->
         <div class="row">
-            <div class=" col-md-3 mx-auto">
-                <img class="logo-footer " src="assets/img/logo.png" alt="">
+            <div class=" col-md-6 mx-auto text-center">
+                <img class="logo-footer w-50" src="assets/img/logo.png" alt="">
 
             </div>
-            <hr class="clearfix w-100 d-md-none">
+            <!-- <hr class="clearfix w-100 d-md-none">
             <div class="col-md-3 mx-auto">
 
-                <!-- Links -->
+                
                 <h4 class="font-weight-bold text-uppercase mt-3 mb-4">• Call for Carry Out •</h4>
 
-            </div>
+            </div> -->
             <hr class="clearfix w-100 d-md-none">
             <div class="col-md-6 mx-auto">
                 <h2 class="text-center text-warning">Locations</h2>
                 <div class="row">
 
-                    <div class="location col-md-6">
-                        <h4><b>Van Dorns</b>, Alexandria Location </h4>
+                    <div class="location-footer col-md-6">
+                        <h4><b>Van Dorn</b>, Alexandria Location </h4>
                         <p>241 S. Van Dorn Street, Alexandria, VA 22304<br>
                             <strong>Phone: (703) 746-9054</strong><br>
-                            <a target="blank" href="https://www.google.com/maps/place/241+S+Van+Dorn+St,+Alexandria,+VA+22304/@38.8110639,-77.1342868,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b24c6fe2a1d3:0x8413fca0a79de01e!8m2!3d38.8110639!4d-77.1320928" id="headerInfob"><b>Map & Directions</b></a>
+
+                            <a target="blank" href="https://www.google.com/maps/place/241+S+Van+Dorn+St,+Alexandria,+VA+22304/@38.8110639,-77.1342868,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b24c6fe2a1d3:0x8413fca0a79de01e!8m2!3d38.8110639!4d-77.1320928" id="headerInfob"><b>Map & Directions</b></a><br>
+                            <a target="blank" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" target="_blank" id="headerInfob" style="font-size:12px;"><strong>Online Orders Click Here</strong></a> </p>
+
                         </p>
                     </div>
 
-                    <div class="location col-md-6">
+                    <div class="location-footer col-md-6">
                         <h4><b>Del Ray</b>, Alexandria Location </h4>
                         <p>2615 Mount Vernon Avenue Alexandria, VA 22301<br>
                             <a target="blank" href="https://goo.gl/maps/Z9veeoGhZQRVU3GJ7" id="headerInfob"><b>Map & Directions</b></a><br><span class="bold">Phone: (703) 299-9290</span><br>
+                            <a target="blank" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" target="_blank" id="headerInfob" style="font-size:12px;"><strong>Online Orders Click Here</strong></a> </p>
+
                         </p>
+
                     </div>
                 </div>
                 <div class="row">
 
-                    <div class="location col-md-6">
+                    <div class="location-footer col-md-6">
                         <h4>
                             <b>Crystal City</b> Location</h4>
                         <p>513 23rd St South Arlington, VA 22202<br>
                             <a target="blank" href="https://goo.gl/maps/hhu8Lt3LVvB6XfY8A" id="headerInfob"><b>Map & Directions</b></a> | <span class="bold">Phone: (703) 647-9702</span><br>
-                            <a target="blank" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" target="_blank" id="headerInfob" style="font-size:12px;"><strong>Online Orders Click Here - Arlington Only</strong></a> </p>
+                            <a target="blank" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" target="_blank" id="headerInfob" style="font-size:12px;"><strong>Online Orders Click Here</strong></a> </p>
                         <p><br>
                         </p>
                     </div>
 
-                    <div class="location col-md-6">
+                    <div class="location-footer col-md-6">
                         <h4>
+
                             <b>Leesburg</b> Location</h4>
                         <p>201 Harrison Street SE Leesburg VA 20175<br>
                             <a target="blank" href="https://goo.gl/maps/jFPRXkrYpuAL6J3y5" id="headerInfob"><b>Map & Directions</b></a><br><span class="bold">Phone: (571) 291-3652</span></p>
@@ -95,9 +102,12 @@
 </script>
 <script src="js/plugins.js"></script>
 
+<!-- map -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 
 <script src="js/main.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
+
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

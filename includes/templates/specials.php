@@ -1,7 +1,6 @@
 <?php
 
 try {
-
     require_once('includes/functions/bd_conn.php');
     $sql = "SELECT id_menu, plate_name, price, ingredients, img, cat_name FROM menu
     INNER JOIN plate
@@ -36,7 +35,7 @@ try {
                 <div class="card-body">
                     <h5 class="card-title plate-name"><?php echo $plate_name ?> </h5>
                     <p class="price"> $ <?php echo $price ?></p>
-                    <p class="card-text plate-ingredients">Crispy corn chips covered with refried beans,melted cheese,jalapeño peppers, guacamole, sour cream, and pico de gallo.</p>
+                    <p class="card-text plate-ingredients"><?php echo $ingredients ?></p>
                 </div>
             </div>
 

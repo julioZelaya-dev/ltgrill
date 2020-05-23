@@ -8,7 +8,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) {
 
 <!-- ======= Menu Section ======= -->
 <section id="menu" class="menu">
-    <div class="container">
+    <div class="container mt-2 mb-3">
 
         <?php
 

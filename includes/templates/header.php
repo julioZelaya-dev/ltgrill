@@ -9,16 +9,22 @@
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
+    <!-- bootstrap CSS only -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
-    <!-- bootstrap CSS only -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap" rel="stylesheet">
+
     <!-- bootstrap CSS only -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+
 
 
 
@@ -29,6 +35,18 @@
 <body>
 
     <!-- nav bar -->
+
+    <?php
+
+    try {
+        require_once('includes/functions/bd_conn.php');
+        $sql = "SELECT * FROM location";
+        $resultado = $conn->query($sql);
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    } ?>
+
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -46,27 +64,22 @@
                             MENUS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="menu.php?location=1">Del Ray</a>
-                            <a class="dropdown-item" href="menu.php?location=2">CRYSTAL CITY</a>
+
+                            <?php while ($location = $resultado->fetch_assoc()) { ?>
+
+                                <a class="dropdown-item" href="menu.php?location=<?php echo $location['id']; ?>"> <?php echo $location['name']; ?> </a>
+                            <?php } ?>
+
+                            <!-- <a class="dropdown-item" href="menu.php?location=2">CRYSTAL CITY</a>
                             <a class="dropdown-item" href="menu.php?location=3">VAN DORN</a>
-                            <a class="dropdown-item" href="menu.php?location=4">LEESBURG</a>
+                            <a class="dropdown-item" href="menu.php?location=4">LEESBURG</a>-->
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="daily-specials.php">Dayli Specials</a>
+                        <a class="nav-link" href="daily-specials.php">Daily Specials</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Locations
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Del Ray</a>
-                            <a class="dropdown-item" href="#">CRYSTAL CITY</a>
-                            <a class="dropdown-item" href="#">VAN DORN</a>
-                            <a class="dropdown-item" href="#">LEESBURG</a>
-                        </div>
-
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="locations.php">Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservations.php">Reservations</a>
@@ -74,18 +87,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="gift-cards.php">Gift cards</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="offers.php">Get offers</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">about</a>
+                    </li>
+
                     <li class="nav-item  dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Order online</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a target="blank" class="dropdown-item" href="https://www.clover.com/online-ordering/los-tios-grill-arlington">ARLINGTON</a>
+
+                            <a class="dropdown-item" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria">Del Ray</a>
+                            <a class="dropdown-item" href="https://www.clover.com/online-ordering/los-tios-grill-arlington">CRYSTAL CITY</a>
+                            <a class="dropdown-item" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria">VAN DORN</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">about</a>
                     </li>
 
                 </ul>
@@ -162,4 +181,4 @@
 
 
     </header>
-    <!-- site header  -->
+    <!-- site header  --

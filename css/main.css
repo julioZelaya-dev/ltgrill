@@ -112,9 +112,10 @@ textarea {
  :root {
     --header-font: 'Open Sans', sans-serif;
     --accent-color: #171f3a;
-    --oswald: 'Oswald', sans-serif;
     --openSans: 'Open Sans', sans-serif;
     --ptSans: 'PT Sans', sans-serif;
+    --fjalla: 'Fjalla One', sans-serif;
+    --roboto: 'Roboto', sans-serif;
     /* colors  */
     --yellow: #ffc107;
 }
@@ -127,7 +128,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--ptSans);
+    font-family: var(--roboto);
 }
 
 .container h2 {
@@ -353,10 +354,6 @@ h3 {
 # Menu Section
 --------------------------------------------------------------*/
 
-.menu {
-    margin: 60px;
-}
-
 .menu #menu-flters {
     padding: 0;
     margin: 0 auto 0 auto;
@@ -369,7 +366,7 @@ h3 {
     cursor: pointer;
     display: inline-block;
     padding: 8px 16px 10px 16px;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 1;
     color: #444444;
@@ -380,9 +377,20 @@ h3 {
     /* border-radius: 50px; */
 }
 
+.menu-content {
+    font-size: 1.2rem
+}
+
+@media (min-width: 780px) {
+    .menu-content {
+        font-size: 1rem
+    }
+}
+
 @media (min-width: 480px) {
     .menu #menu-flters li {
         padding: 12px 20px;
+        font-size: 14px;
     }
 }
 
@@ -434,8 +442,7 @@ h3 {
 
 .menu .menu-ingredients {
     font-style: italic;
-    font-size: 14px;
-    font-family: "Comic Neue", sans-serif;
+    font-size: 1.1rem;
     color: #948c81;
 }
 
@@ -447,21 +454,21 @@ h3 {
     height: auto;
 }
 
-.location {
+.location-footer {
     margin-bottom: 10px;
 }
 
-.location p,
-h4 {
+.location-footer p,
+.location-footer h4 {
     font-size: 12px;
     color: white;
 }
 
-.location a {
+.location-footer a {
     color: var(--yellow);
 }
 
-.location a:hover {
+.location-footer a:hover {
     color: var(--yellow);
     text-decoration: none;
 }
@@ -479,8 +486,97 @@ h4 {
     margin-bottom: 1.625rem;
 }
 
+
+/* gift cards and reservation */
+
 .extras {
     margin: 20px 0;
+}
+
+
+/*--------------------------------------------------------------
+# locations
+--------------------------------------------------------------*/
+
+.locations {
+    overflow: hidden;
+}
+
+.locations .container {
+    background-color: #ffffff;
+}
+
+.locations .nav-tabs {
+    border: 0;
+}
+
+.locations .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #433f39;
+    border-radius: 0;
+    border-right: 2px solid #e8e7e4;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.locations .nav-link:hover {
+    color: #ffb03b;
+}
+
+.locations .nav-link.active {
+    color: #ffb03b;
+    border-color: #ffb03b;
+}
+
+.locations .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.locations .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #433f39;
+}
+
+.locations .details p {
+    color: #777777;
+}
+
+.locations .details p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .locations .nav-link {
+        border: 0;
+        padding: 15px;
+    }
+    .locations .nav-link.active {
+        color: #fff;
+        background-color: #ffb03b;
+    }
+}
+
+.location-info h3 {
+    margin: 20px 0;
+}
+
+.location-info p,
+.location-info h4 {
+    color: #000;
+}
+
+.location-info p {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-top: 20px;
+    height: 270px;
 }
 
 
