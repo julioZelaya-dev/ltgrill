@@ -15,7 +15,7 @@
 
             <button type="button" class="btn btn-warning btn-block">BUY</button>
         </div>
-        <div class="col-md-6 textcenter">
+        <div class="col-md-6 text-center">
             <div class="image-thumbnail rounded" style="background-image: url(assets/img/reservations.jpg)"></div>
             <h3 class="text-center font-weight-bold">Reservations</h3>
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eos aperiam offici</p>

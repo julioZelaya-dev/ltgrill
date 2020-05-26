@@ -19,11 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- bootstrap CSS only -->
+    <!-- bootstrap animate -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
 
 
 
@@ -181,4 +182,4 @@
 
 
     </header>
-    <!-- site header  --
+    <!-- site header  -->
