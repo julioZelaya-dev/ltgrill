@@ -1,12 +1,29 @@
 <?php
 
 try {
+
+    $id_location = 1;
     require_once('includes/functions/bd_conn.php');
-    $sql = "SELECT id_menu, plate_name, price, ingredients, img, cat_name FROM menu
+    $sql = "SELECT
+    plate.plate_name,
+    plate.price,
+    plate.ingredients,
+    plate.img,
+    plate_categories.id_cat,
+    location.name,
+    menu.id_location
+    FROM menu
     INNER JOIN plate
-    on menu.id_plate = plate.id_plate
-    INNER JOIN cat_plate
-    ON plate.id_cat= cat_plate.id_cat ";
+    ON menu.id_plate = plate.id_plate
+    INNER JOIN cat_detail
+    ON cat_detail.id_plate = plate.id_plate
+    INNER JOIN plate_categories
+    ON cat_detail.id_cat = plate_categories.id_cat
+    INNER JOIN location
+    ON menu.id_location = location.id
+    WHERE menu.id_location = $id_location
+    AND plate_categories.id_cat = 1 ";
+
     $resultado = $conn->query($sql);
 } catch (Exception $e) {
     //throw $th;
@@ -18,7 +35,7 @@ try {
 
 <section class="specials container animate__animated animate__fadeIn">
 
-    <h2>Today specials</h2>
+    <h2> Today specials</h2>
     <div class="card-columns ">
         <?php while ($plate = $resultado->fetch_assoc()) {
             $plate_name = $plate['plate_name'];

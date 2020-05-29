@@ -1,6 +1,6 @@
 <?php include_once 'includes/templates/header.php' ?>
 
-<section class="about container text-justify ">
+<section class="about container text-justify animate__animated animate__fadeIn ">
     <div class="container">
         <h2 class="text-center">GIFT CARDS</h2>
     </div>

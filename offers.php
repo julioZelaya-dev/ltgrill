@@ -1,6 +1,6 @@
 <?php include_once 'includes/templates/header.php' ?>
 
-<section class="offers text-justify ">
+<section class="offers text-justify animate__animated animate__fadeIn">
     <div class="container">
         <h2 class="text-center">Sign up for new offers</h2>
         <div class="row">

@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap');
 :root {
-    --backgroudcolor: #ffffff;
-    --maincolordark: #060607;
-    --maincolorlight: #404042;
+    --backgroudcolor: rgba(0, 10, 15, 0.8);
+    --maincolordark: #cecece;
+    --maincolorlight: #ffffff;
     --barlow_condensed: 'Barlow Condensed', sans-serif;
     --roboto_condensed: 'Roboto Condensed', sans-serif;
 }
 
 body .nav-menu {
-    background: #ffffff;
+    background: var(--backgroudcolor);
     margin: 0;
     font-family: var(--barlow_condensed)!important;
+}
+
+.sticky-nav-bar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
 .menu-item-nav a {
@@ -69,14 +75,14 @@ body .nav-menu {
 .sub-menu {
     position: absolute;
     left: 0%;
-    background: #fff;
-    top: 50px;
+    background: var(--backgroudcolor);
+    top: 54px;
     padding: 0;
     text-align: left;
     box-shadow: 0px 4px 20px -5px rgba(0, 0, 0, 0.15);
     max-height: 0;
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 150px;
+    min-width: 150px;
     opacity: 0;
     -webkit-transition: 0.45s ease all 0.1s;
     transition: 0.45s ease all 0.1s;
@@ -112,8 +118,8 @@ body .nav-menu {
 
 .menu-item-nav:nth-child(n+1):hover .sub-menu {
     max-height: 300px;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 150px;
+    max-width: 150px;
     opacity: 1;
 }
 
@@ -169,18 +175,23 @@ body .nav-menu {
 /* order sub menu  */
 
 .menu-item-nav:nth-child(n+8)>a {
-    background-color: #ffc107;
-    -webkit-transition: background-color 500ms linear;
-    -moz-transition: background-color 500ms linear;
-    -o-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
     padding: 15px;
     border-radius: 5px;
+    color: var(--backgroudcolor);
+}
+
+.menu-item-nav:nth-child(n+8):before {
+    content: none;
 }
 
 .menu-item-nav:nth-child(n+8)>a:hover {
-    background-color: var(--backgroudcolor);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
 }
 
 .menu-item-nav:nth-child(n+8) .plus-icon {
@@ -205,8 +216,8 @@ body .nav-menu {
 
 .menu-item-nav:nth-child(n+8):hover .sub-menu {
     max-height: 200px;
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 150px;
+    max-width: 150px;
     opacity: 1;
 }
 
@@ -261,13 +272,17 @@ body .nav-menu {
     .menu-item-nav a {
         font-size: 22px;
     }
+    .mobile-button:focus {
+        border: 0;
+        outline: 0;
+    }
     .mobile-button {
         display: inline-block;
         position: absolute;
         right: 10px;
         top: 7.5px;
-        background: #FFF;
-        color: #3d3d3d;
+        background: transparent;
+        color: var(--orange);
         margin: 0;
         padding: 0;
         cursor: pointer;
@@ -279,7 +294,7 @@ body .nav-menu {
     .mobile-button .line3 {
         width: 35px;
         height: 4px;
-        background-color: #333;
+        background-color: var(--orange);
         margin: 6px 0;
         transition: 0.4s;
         display: block;
@@ -345,10 +360,13 @@ body .nav-menu {
         content: "";
         border-bottom: 1px solid var(--maincolorlight);
         overflow: hidden;
-        width: 0%;
-        left: 50%;
+        width: 40%;
+        left: 30%;
         top: 39px;
         z-index: 1;
+    }
+    .menu-item-nav:nth-child(n+8):before {
+        content: none;
     }
     .sub-menu {
         position: relative;
@@ -361,6 +379,7 @@ body .nav-menu {
         transition: 0.2s ease all;
         z-index: 0;
         margin: auto;
+        background-color: transparent;
     }
     /* location submenu */
     .menu-item-nav:nth-child(n+1):hover .sub-menu-item:nth-child(n+1) {

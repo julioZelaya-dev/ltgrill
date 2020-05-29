@@ -13,7 +13,7 @@ try {
 
 
 
-<nav class="nav-menu">
+<nav class="nav-menu sticky-top">
     <button class="mobile-button">
         <span class="line1"></span>
         <span class="line2"></span>
@@ -22,7 +22,7 @@ try {
 
     <ol>
         <li class="menu-item-nav">
-            <a href="#0">Menus
+            <a href="#">Menus
                 <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
                     <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10" y1="9" x2="17" y2="9" />
                     <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="9" y1="9" x2="9" y2="1" />
@@ -60,8 +60,8 @@ try {
             <a href="about.php">about</a>
         </li>
 
-        <li class="menu-item-nav">
-            <a href="#0">Order Online
+        <li class="menu-item-nav ">
+            <a class="bg-c-orange" href="#">Order Online
                 <svg version="1.1" class="plus-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18">
                     <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10" y1="9" x2="17" y2="9" />
                     <line fill="none" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="9" y1="9" x2="9" y2="1" />

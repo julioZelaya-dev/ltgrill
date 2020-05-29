@@ -2,11 +2,11 @@
 
 
 <!-- ======= Specials Section ======= -->
-<section id="locations" class="locations mt-2 mb-3">
+<section id="locations" class="locations mt-2 mb-3 animate__animated animate__fadeIn">
     <div class="container">
 
         <div class="section-title">
-            <h2 class="text-left">Locations<span></span></h2>
+            <h2>Locations<span></span></h2>
         </div>
 
         <div class="row">
@@ -45,7 +45,7 @@
                             <div class="col-md-12">
                                 <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online</a>
                                 <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Order catering</a>
+                                <a class="btn btn-warning" href="menu.php?location=1" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
@@ -74,7 +74,7 @@
                             <div class="col-md-12">
                                 <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online</a>
                                 <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Order catering</a>
+                                <a class="btn btn-warning" href="menu.php?location=2" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
@@ -102,7 +102,7 @@
                             <div class="col-md-12">
                                 <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online</a>
                                 <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Order catering</a>
+                                <a class="btn btn-warning" href="menu.php?location=3" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
@@ -130,7 +130,7 @@
                         <div class="row mt-4">
                             <div class="col-md-12">
                                 <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Order catering</a>
+                                <a class="btn btn-warning" href="menu.php?location=4" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
