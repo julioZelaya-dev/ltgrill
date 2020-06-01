@@ -12,7 +12,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
     </div>
 <?php
     // Redirect browser 
-    header("Location: /404.html");
+    header("Location: location/");
 
     exit;
 } ?>
@@ -68,9 +68,14 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="menu-flters">
-                    <li data-filter="*" class="filter-active">Show All</li>
+                    <!-- <li data-filter="*" class="filter-active">Show All</li> -->
                     <?php while ($menu_type = $resultado->fetch_assoc()) { ?>
-                        <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>"><?php echo $menu_type['cat_name'] ?></li>
+
+                        <?php if ((int) $menu_type['id_cat'] == 1) : ?>
+                            <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>" class="filter-active"><?php echo $menu_type['cat_name'] ?></li>
+                        <?php else : ?>
+                            <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>"><?php echo $menu_type['cat_name'] ?></li>
+                        <?php endif; ?>
                     <?php } ?>
                 </ul>
             </div>
@@ -80,7 +85,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
 
             <?php
             require_once 'includes/functions/bd_conn.php';
-            $sql = "SELECT
+            $sql = "SELECT DISTINCT
             plate.plate_name,
             plate.id_plate,
             plate.price,

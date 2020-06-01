@@ -1,11 +1,13 @@
 <?php include_once 'includes/templates/header.php' ?>
 
+
+
 <section class="about container text-justify animate__animated animate__fadeIn">
 
     <h2 class="text-center"> OUR HISTORY</h2>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <p>
                 <b>Los Tios Grill</b> describes their dishes as <b>"Fine Tex-Mex & Salvadorean Food.”</b> Los Tios could also be described as a smash hit restaurant with four locations: the first in the trendy Del Ray shopping and dining area of Alexandria,
                 followed by a second location on Van Dorn Street in Alexandria, a third in Crystal City, Arlington and recently a new fourth location in Leesburg, Virginia.
@@ -18,9 +20,6 @@
 
         </div>
 
-        <div class="col-md-4 text-center mb-3">
-            <img class="rounded box-shadow img-fluid " src="assets/img/about/about-1.jpg" alt="about img">
-        </div>
 
     </div>
     <p>
@@ -33,10 +32,8 @@
 
 
     <div class="row">
-        <div class="col-md-4 text-center mb-3">
-            <img class="rounded box-shadow img-fluid " src="assets/img/about/about-2.jpg" alt="about img">
-        </div>
-        <div class="col-md-8">
+
+        <div class="col-md-12">
             <p>
                 <b>Other favorites include:</b> the Los Tios Carne Asada, a 10 oz. Juicy sirloin center cut, marinated and grilled and served with garlic sauce, fried yucca, white rice, black beans and salad; the especially well done and very tender Lechoncito al Horno, morsels of pork roasted in Spanish style sauce, covered with sautéed Spanish onions, and served with white rice and black beans; Pollo Veracruz, a tasty grilled chicken breast, topped with pico de gallo and melted cheese, and served with a small salad, white rice, and black beans.
                 For the seafood lover… Los Tios offers delicious broiled tilapia filet,
@@ -67,6 +64,87 @@
 
 
 </section>
+
+<!-- ======= Gallery Section ======= -->
+<section id="gallery" class="gallery">
+    <div class="container mb-5">
+
+        <div class="section-title">
+            <h2>Some photos from <span>Our Restaurant</span></h2>
+
+        </div>
+
+        <div class="row no-gutters">
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Gallery Section -->
 
 
 

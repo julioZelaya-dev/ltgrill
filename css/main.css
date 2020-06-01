@@ -129,7 +129,10 @@ textarea {
 
 .bg-c-orange {
     background-color: var(--orange);
-    font-weight: bold;
+}
+
+.bg-c-orange:hover {
+    background-color: #e98736
 }
 
 .bg-c-gray {
@@ -137,7 +140,13 @@ textarea {
 }
 
 .bg-c-be {
-    background-color: var(--be);
+    background-color: var(--be)!important;
+    color: black!important;
+}
+
+.bg-c-be:hover {
+    color: rgb(35, 35, 35)!important;
+    background-color: #6a6968!important;
 }
 
 .font-c-orange {
@@ -145,7 +154,7 @@ textarea {
 }
 
 body {
-    font-family: var(--openSans);
+    /* font-family: var(--openSans); */
     background-image: url('../assets/img/bg/vintage_speckles_@2X.png')!important;
 }
 
@@ -325,7 +334,7 @@ h3 {
     line-height: 1;
     width: auto;
     height: auto;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 50px;
     padding: 10px;
     transition: 0.3s;
@@ -334,7 +343,7 @@ h3 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-    background: rgba(255, 255, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -515,6 +524,10 @@ h3 {
 
 /* footer */
 
+footer {
+    background-color: var(--backgroudcolor);
+}
+
 .page-footer h2::after {
     display: none;
 }
@@ -562,6 +575,23 @@ h3 {
 .extras {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: var(--barlow_condensed);
+}
+
+.extras h3 {
+    font-family: var(--barlow_condensed);
+    font-size: 34px;
+}
+
+.extras .row div {
+    margin-bottom: 20px;
+}
+
+.extras .row button {
+    background-color: var(--orange);
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
 }
 
 
@@ -575,10 +605,16 @@ h3 {
 
 .locations .container {
     background-color: #ffffff;
+    padding: 20px;
 }
 
 .locations .nav-tabs {
     border: 0;
+}
+
+.locations .row {
+    font-family: var(--barlow_condensed);
+    text-align: center;
 }
 
 .locations .nav-link {
@@ -588,17 +624,24 @@ h3 {
     color: #433f39;
     border-radius: 0;
     border-right: 2px solid #e8e7e4;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .locations .nav-link {
+        text-align: right;
+    }
 }
 
 .locations .nav-link:hover {
-    color: #ffb03b;
+    color: var(--orange);
 }
 
 .locations .nav-link.active {
-    color: #ffb03b;
-    border-color: #ffb03b;
+    color: var(--orange);
+    border-color: var(--orange);
 }
 
 .locations .tab-pane.active {
@@ -628,8 +671,19 @@ h3 {
     }
     .locations .nav-link.active {
         color: #fff;
-        background-color: #ffb03b;
+        background-color: var(--orange);
     }
+}
+
+.tab-content a {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tab-content a:hover {
+    color: rgb(245, 238, 238);
 }
 
 .locations a {
@@ -651,6 +705,9 @@ h3 {
 
 .location-info h3 {
     margin: 20px 0;
+    font-family: var(--barlow_condensed)!important;
+    font-size: 34px!important;
+    font-weight: 500!important;
 }
 
 .location-info p,
@@ -660,11 +717,29 @@ h3 {
 
 .location-info p {
     margin-bottom: 20px;
+    font-size: 19px;
 }
 
 .map {
     margin-top: 20px;
     height: 270px;
+    border: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.leaflet-container .leaflet-control-attribution {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    display: none;
 }
 
 
@@ -687,6 +762,75 @@ h3 {
 
 .offers label {
     font-weight: bold;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font-family: var(--barlow_condensed);
+    font-size: 22px;
+    font-weight: 400!important;
+}
+
+#mc_embed_signup .indicates-required {
+    font-size: 18px!important;
+}
+
+#mc_embed_signup .btn {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+/* about */
+
+.gallery {
+    padding-bottom: 0;
+}
+
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* reservations */
+
+.reservations {
+    font-family: var(--barlow_condensed);
+    font-size: 18px;
+    margin-bottom: 500px;
+}
+
+.reservations .row {
+    font-size: 22px;
+}
+
+.reservations h3 {
+    font-family: var(--barlow_condensed)!important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reservations input {
+    font-size: 17px;
+}
+
+.reservations .row i {
+    color: #ffffff;
+}
+
+.reservations .row .input-group-text {
+    background-color: var(--orange);
 }
 
 

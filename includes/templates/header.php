@@ -24,16 +24,19 @@
 
     <!-- bootstrap animate -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome/all.min.css">
-
-
-
-
-
-
+    <!-- venobox is for gallery -->
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <!-- carousel -->
+    <link href="js/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- daterange  -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/select2-bootstrap4.min.css">
+    <!-- time picker -->
+    <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -97,12 +100,13 @@
                     </div>
 
                     <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon fas fa-angle-left" aria-hidden="true"></span>
+
                         <span class="sr-only">Previous</span>
                     </a>
 
                     <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon fas fa-angle-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
 

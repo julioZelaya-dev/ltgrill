@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer font-small bg-dark">
+<footer class="page-footer font-small">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -118,12 +118,28 @@
 </script>
 <script src="js/plugins.js"></script>
 
-<!-- map -->
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+<!-- google maps 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNmJUJq0uyDTOJCopjvRBDN3qyQncUSwY&callback=initMap" async defer></script>
+-->
 
-<script src="js/main.js"></script>
+<!-- menu filter -->
 <script src="js/isotope.pkgd.min.js"></script>
+<!-- gallery -->
+<script src="js/venobox.min.js"></script>
+<!-- carousel -->
+<script src="https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/dist/owl.carousel.min.js"> </script>
+<!-- select2 -->
+<script src="js/select2.full.min.js"></script>
+<!-- daterange -->
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<!-- time picker -->
+<script src="js/tempusdominus-bootstrap-4.min.js"></script>
 
+
+
+
+<script src="js/main.js?=111"></script>
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

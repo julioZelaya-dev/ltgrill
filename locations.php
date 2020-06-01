@@ -43,16 +43,26 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a class="btn btn-warning" href="menu.php?location=1" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online</a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
+                                <a class="btn bg-c-orange" href="menu.php?location=1" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <!-- <div class="col-md-12">
                                 <div id="del-rey-map" class="map del-rey-map rounded">
                                 </div>
+                            </div> -->
+
+                            <div class="col-md-12 mb-2">
+                                <iframe style="margin-top: 20px;height: 500px;border: 0;width: 100%;border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.1456623306794!2d-77.06108608476706!3d38.82912477958131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b12055cccf43%3A0x8d727656f007f95c!2sLos%20Tios%20Grill!5e0!3m2!1ses-419!2sni!4v1590810161631!5m2!1ses-419!2sni" frameborder="0" allowfullscreen>
+                                </iframe>
                             </div>
+                            <div class="col-md-12">
+                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps/place/Los+Tios+Grill/@38.829125,-77.058897,16z/data=!4m5!3m4!1s0x0:0x8d727656f007f95c!8m2!3d38.8291248!4d-77.0588974?hl=es-419" role="button">Get directions</a>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -72,15 +82,23 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a class="btn btn-warning" href="menu.php?location=2" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online</a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
+                                <a class="btn bg-c-orange" href="menu.php?location=2" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <!-- <div class="col-md-12">
                                 <div id="crystal-map" class="map crystal-map rounded">
                                 </div>
+                            </div> -->
+
+                            <div class="col-md-12 mb-2">
+                                <iframe style="margin-top: 20px;height: 500px;border: 0;width: 100%;border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.078049628223!2d-77.05604058476631!3d38.85357037957747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b726b4d2d599%3A0xb162d255fda0869f!2sLos%20Tios%20Grill%20Arlington!5e0!3m2!1ses-419!2sni!4v1590810571237!5m2!1ses-419!2sni" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-md-12">
+                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps?ll=38.85357,-77.053852&z=16&t=m&hl=es-419&gl=NI&mapclient=embed&cid=12782009959200097951" role="button">Get directions</a>
                             </div>
                         </div>
                     </div>
@@ -100,16 +118,25 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn btn-warning" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online</a>
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a class="btn btn-warning" href="menu.php?location=3" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online</a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
+                                <a class="btn bg-c-orange" href="menu.php?location=3" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div id="crystal-map" class="map crystal-map rounded">
-                                </div>
+                            <!--<div class="col-md-12">
+                                 <div id="van-dorn-map" class="map rounded">
+                                </div> 
+                            </div>-->
+                            <div class="col-md-12 mb-2">
+                                <iframe style="margin-top: 20px;height: 500px;border: 0;width: 100%;border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d777.2230606395126!2d-77.1340587!3d38.8120223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b24c657b784f%3A0x3eef7eeb823ba509!2sLos%20Tios%20Grill%20Phones%20to%20place%20orders%20(703)%20746-9054%20and%20(571)%20982-4937!5e0!3m2!1ses-419!2sni!4v1590773918125!5m2!1ses-419!2sni" frameborder="0" allowfullscreen>
+                                </iframe>
                             </div>
+                            <div class="col-md-12">
+                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps?ll=38.812083,-77.134035&z=18&t=m&hl=es-419&gl=NI&mapclient=embed&cid=4534982899752740105" role="button">Get directions</a>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -129,15 +156,23 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn btn-warning" href="#" role="button">Reservation</a>
-                                <a class="btn btn-warning" href="menu.php?location=4" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
+                                <a class="btn bg-c-orange" href="menu.php?location=4" role="button">Menu</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div id="crystal-map" class="map crystal-map rounded">
-                                </div>
+                            <!--<div class="col-md-12">
+                                 <div id="lessburg-map" class="map rounded">
+                                </div> 
+                            </div>-->
+                            <div class="col-md-12 mb-2">
+                                <iframe style="margin-top: 20px;height: 500px;border: 0;width: 100%;border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.716299487432!2d-77.5654027847582!3d39.112928679537895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b617d5fb5c8607%3A0x2074f320091bbacb!2sLos%20Tios%20Grill!5e0!3m2!1ses-419!2sni!4v1590809485807!5m2!1ses-419!2sni" frameborder="0" allowfullscreen>
+                                </iframe>
                             </div>
+                            <div class="col-md-12">
+                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps/place/Los+Tios+Grill/@39.112929,-77.563214,16z/data=!4m5!3m4!1s0x0:0x2074f320091bbacb!8m2!3d39.1129287!4d-77.5632141?hl=es-419" role="button">Get directions</a>
+                            </div>
+
                         </div>
                     </div>
 
