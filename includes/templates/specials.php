@@ -4,7 +4,7 @@ try {
 
     $id_location = 1;
     require_once('includes/functions/bd_conn.php');
-    $sql = "SELECT
+    $sql = "SELECT DISTINCT
     plate.plate_name,
     plate.price,
     plate.ingredients,
@@ -26,7 +26,7 @@ try {
 
     $resultado = $conn->query($sql);
 } catch (Exception $e) {
-    //throw $th;
+
     echo $e->getMessage();
 }
 

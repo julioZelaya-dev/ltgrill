@@ -761,7 +761,7 @@ footer {
 }
 
 .offers label {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 #mc_embed_signup {
@@ -808,7 +808,6 @@ footer {
 .reservations {
     font-family: var(--barlow_condensed);
     font-size: 18px;
-    margin-bottom: 500px;
 }
 
 .reservations .row {
@@ -821,16 +820,33 @@ footer {
     text-align: center;
 }
 
-.reservations input {
-    font-size: 17px;
+.reservations .select2 option {
+    font-size: 1rem!important;
+    font-weight: 400!important;
+    line-height: 1.5!important;
+    color: #495057!important;
 }
 
 .reservations .row i {
     color: #ffffff;
 }
 
+.reservations form {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
 .reservations .row .input-group-text {
     background-color: var(--orange);
+}
+
+input.bg-c-orange {
+    text-align: center;
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
 }
 
 
