@@ -81,7 +81,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
             </div>
         </div>
 
-        <div class="row menu-container">
+        <div class="row menu-container shadow">
 
             <?php
             require_once 'includes/functions/bd_conn.php';

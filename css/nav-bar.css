@@ -3,7 +3,7 @@
     --backgroudcolor: rgba(0, 10, 15, 0.918);
     --maincolordark: #cecece;
     --maincolorlight: #ffffff;
-    --barlow_condensed: 'Barlow Condensed', sans-serif;
+    --font-1: 'Barlow Condensed', sans-serif;
     --roboto_condensed: 'Roboto Condensed', sans-serif;
 }
 
@@ -16,7 +16,7 @@
 body .nav-menu {
     background: var(--backgroudcolor);
     margin: 0;
-    font-family: var(--barlow_condensed)!important;
+    font-family: var(--font-1)!important;
 }
 
 .sticky-nav-bar {
@@ -41,7 +41,7 @@ body .nav-menu {
 }
 
 .nav-menu {
-    background: #fff;
+    /* background: #fff; */
     margin: auto;
     text-align: center;
     padding: 15px;
@@ -82,7 +82,7 @@ body .nav-menu {
     position: absolute;
     left: 0%;
     background: var(--backgroudcolor);
-    top: 54px;
+    top: 54.5px;
     padding: 0;
     text-align: left;
     box-shadow: 0px 4px 20px -5px rgba(0, 0, 0, 0.15);
@@ -191,9 +191,13 @@ body .nav-menu {
     color: var(--backgroudcolor);
 }
 
-ol .order-sub:hover~#orders {
-    background-color: transparent!important;
+ol .order-sub:hover~ {
     color: rgb(255, 255, 255);
+}
+
+.transparent-c {
+    background-color: transparent!important;
+    color: var(--maincolorlight)!important;
 }
 
 .menu-item-nav:nth-child(n+9):before {

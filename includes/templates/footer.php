@@ -135,12 +135,21 @@
 <script src="js/daterangepicker.js"></script>
 <!-- time picker -->
 <script src="js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- jquery-validation -->
+<script src="js/jquery-validation/jquery.validate.min.js"></script>
+<script src="js/jquery-validation/additional-methods.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<!-- notifications -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 
 
 
-<script src="js/main.js?=112"></script>
-
+<script src="js/main.js?dev=117"></script>
+<!-- Development version:
+ <script>
+    document.write('<script src="js/main.js.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+</script> -->
 
 <!-- Google Analytics -->
 

@@ -32,9 +32,9 @@
                         <div class="row mb-2">
                             <div class="col-lg-8 details order-2 order-lg-1 location-info">
                                 <h3>Del Ray</h3>
-                                <h4>Direction</h4>
+                                <h4>Direction &nbsp;&nbsp;<span class="fas fa-map-marker-alt"></span></h4>
                                 <p>2615 Mount Vernon Avenue Alexandria, VA 22301</p>
-                                <h4>Telephone</h4>
+                                <h4>Telephone &nbsp;&nbsp;<span class="fas fa-phone"></span></h4>
                                 <p> (703) 299-9290</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -43,9 +43,9 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online</a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
-                                <a class="btn bg-c-orange" href="menu.php?location=1" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></span></a>
+                                <a class="btn bg-c-orange" href="menu.php?location=1" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
                         <div class="row">
@@ -59,7 +59,7 @@
                                 </iframe>
                             </div>
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps/place/Los+Tios+Grill/@38.829125,-77.058897,16z/data=!4m5!3m4!1s0x0:0x8d727656f007f95c!8m2!3d38.8291248!4d-77.0588974?hl=es-419" role="button">Get directions</a>
+                                <a target="blank" class="btn bg-c-orange get-loc" href="https://www.google.com/maps/place/Los+Tios+Grill/@38.829125,-77.058897,16z/data=!4m5!3m4!1s0x0:0x8d727656f007f95c!8m2!3d38.8291248!4d-77.0588974?hl=es-419" role="button">Get directions &nbsp;<span class="fas fa-compass"></span></a>
                             </div>
 
 
@@ -71,9 +71,9 @@
                         <div class="row mb-2">
                             <div class="col-lg-8 details order-2 order-lg-1 location-info">
                                 <h3>Crystal City</h3>
-                                <h4>Direction</h4>
+                                <h4>Direction &nbsp;&nbsp;<span class="fas fa-map-marker-alt"></span></h4>
                                 <p>513 23rd St South Arlington, VA 22202</p>
-                                <h4>Telephone</h4>
+                                <h4>Telephone &nbsp;&nbsp;<span class="fas fa-phone"></span></h4>
                                 <p>(703) 647-9702</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -82,9 +82,9 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online</a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
-                                <a class="btn bg-c-orange" href="menu.php?location=2" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a class="btn bg-c-orange" href="menu.php?location=2" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
                         <div class="row">
@@ -98,7 +98,7 @@
                                 </iframe>
                             </div>
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps?ll=38.85357,-77.053852&z=16&t=m&hl=es-419&gl=NI&mapclient=embed&cid=12782009959200097951" role="button">Get directions</a>
+                                <a target="blank" class="btn bg-c-orange get-loc" href="https://www.google.com/maps?ll=38.85357,-77.053852&z=16&t=m&hl=es-419&gl=NI&mapclient=embed&cid=12782009959200097951" role="button">Get directions &nbsp;<span class="fas fa-compass"></span></a>
                             </div>
                         </div>
                     </div>
@@ -107,9 +107,9 @@
                         <div class="row mb-2">
                             <div class="col-lg-8 details order-2 order-lg-1 location-info">
                                 <h3>Van Dorn</h3>
-                                <h4>Direction</h4>
+                                <h4>Direction &nbsp;&nbsp;<span class="fas fa-map-marker-alt"></span></h4>
                                 <p>241 S. Van Dorn Street, Alexandria, VA 22304</p>
-                                <h4>Telephone</h4>
+                                <h4>Telephone &nbsp;&nbsp;<span class="fas fa-phone"></span></h4>
                                 <p>(703) 746-9054</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -118,9 +118,9 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online</a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
-                                <a class="btn bg-c-orange" href="menu.php?location=3" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a class="btn bg-c-orange" href="menu.php?location=3" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
                         <div class="row">
@@ -133,7 +133,7 @@
                                 </iframe>
                             </div>
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps?ll=38.812083,-77.134035&z=18&t=m&hl=es-419&gl=NI&mapclient=embed&cid=4534982899752740105" role="button">Get directions</a>
+                                <a target="blank" class="btn bg-c-orange get-loc" href="https://www.google.com/maps?ll=38.812083,-77.134035&z=18&t=m&hl=es-419&gl=NI&mapclient=embed&cid=4534982899752740105" role="button">Get directions &nbsp;<span class="fas fa-compass"></span></a>
                             </div>
 
 
@@ -145,9 +145,9 @@
                         <div class="row mb-2">
                             <div class="col-lg-8 details order-2 order-lg-1 location-info">
                                 <h3>Leesburg</h3>
-                                <h4>Direction</h4>
+                                <h4>Direction &nbsp;&nbsp;<span class="fas fa-map-marker-alt"></span></h4>
                                 <p>201 Harrison Street SE Leesburg VA 20175</p>
-                                <h4>Telephone</h4>
+                                <h4>Telephone &nbsp;&nbsp;<span class="fas fa-phone"></span></h4>
                                 <p>(571) 291-3652</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -156,8 +156,8 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation</a>
-                                <a class="btn bg-c-orange" href="menu.php?location=4" role="button">Menu</a>
+                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a class="btn bg-c-orange" href="menu.php?location=4" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
                         <div class="row">
@@ -170,7 +170,7 @@
                                 </iframe>
                             </div>
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="https://www.google.com/maps/place/Los+Tios+Grill/@39.112929,-77.563214,16z/data=!4m5!3m4!1s0x0:0x2074f320091bbacb!8m2!3d39.1129287!4d-77.5632141?hl=es-419" role="button">Get directions</a>
+                                <a target="blank" class="btn bg-c-orange get-loc" href="https://www.google.com/maps/place/Los+Tios+Grill/@39.112929,-77.563214,16z/data=!4m5!3m4!1s0x0:0x2074f320091bbacb!8m2!3d39.1129287!4d-77.5632141?hl=es-419" role="button">Get directions &nbsp;<span class="fas fa-compass"></span></a>
                             </div>
 
                         </div>

@@ -13,19 +13,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- nav bar  -->
-    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/nav-bar.css?v=7">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/main.css?v=2">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- bootstrap animate -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <script src="https://kit.fontawesome.com/306c815030.js" crossorigin="anonymous"></script>
     <!-- venobox is for gallery -->
     <link rel="stylesheet" href="css/venobox.min.css">
     <!-- carousel -->
@@ -43,14 +45,14 @@
 
 <body>
 
+
+
+
+
     <!-- nav bar -->
     <?php include_once 'includes/templates/nav-bar.php' ?>
 
     <!-- end-navbar  -->
-
-
-
-
     <!-- site header  -->
     <header class="site-header">
 
@@ -71,7 +73,6 @@
                                 <div class="carousel-content">
                                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
                                     <p class="animated fadeInUp">Your favorite dishes are available with your carry out</p>
-
                                 </div>
                             </div>
                         </div>

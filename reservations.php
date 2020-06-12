@@ -21,51 +21,59 @@ try {
         Reserve your table now to celebrate a birthday, anniversary, or just a Tuesday night with family and friends.
     </p>
 
-    <h3>Make a reservation</h3>
-    <form action="#" method="post" class="col-md-7 mx-auto bg">
-        <div class="row -white shadow rounded pt-3 pb-3">
+
+    <form method="post" id="reservation" class="col-md-8 mx-auto  " action="includes/models/reservation-mod.php">
+
+        <div class="row pb-3 shadow rounded">
+            <h3 class="bg-c-orange col-md-12 text-white rounded-top text-center pt-2 pb-2 text-uppercase">Make a reservation</h2>
+                <div class="col-md-12 ">
+                    <p class="text-right"><span class="text-danger">*</span> indicates required</p>
+                </div>
 
 
-            <div class="col-md-12 form-group">
-                <label>Location:</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="far fa-compass"></i>
-                        </span>
-                    </div>
-                    <select class="form-control select2" ">
+                <div class="form-group col-md-6">
+                    <label>Location:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="far fa-compass"></i>
+                            </span>
+                        </div>
+                        <select class="form-control select2" name="location" id="location">
 
                             <?php while ($location = $resultado->fetch_assoc()) {
                                 if ((int) $location['id'] == 1) { ?>
                                     <option value=" <?php echo $location['id']; ?>" selected="selected"><?php echo $location['name']; ?></option>
-                    <?php } else { ?>
-                        <option value="<?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
+                                <?php } else { ?>
+                                    <option value="<?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
 
-                <?php }
+                            <?php }
                             } ?>
-                    </select>
-                </div>
-
-            </div>
-            <!-- /.form-group -->
-
-            <div class="form-group col-md-12">
-                <label for="guest">Guests:</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="fas fa-users"></i>
-                        </span>
+                        </select>
                     </div>
-                    <input type="number" name="guest" id="guest" min="1" max="85" class="form-control" placeholder="Up to 85 guests">
 
                 </div>
-            </div>
-            <!-- /.form-group -->
+                <!-- /.form-group -->
+                <div class="form-group col-md-6">
+                    <label for="name">Contact’s Name: <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
 
-            <div class="col-md-6">
-                <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your name">
+
+                    </div>
+                </div>
+
+                <!-- /.form-group -->
+
+
+
+
+                <div class="form-group col-md-6">
                     <label>Date:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -73,30 +81,26 @@ try {
                                 <i class="far fa-calendar-alt"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control" id="date" name="fecha_evento">
+                        <input type="text" class="form-control" id="date" name="date">
                     </div>
                     <!-- /.input group -->
 
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bootstrap-timepicker">
+
+
+                <div class="bootstrap-timepicker col-md-6">
 
 
                     <div class="form-group">
-                        <label>Time:</label>
+                        <label>Time: <span class="text-danger">*</span></label>
 
                         <div class="input-group date" id="timepicker" data-target-input="nearest">
 
-                            <!-- <div class="input-group-prepend" data-target="#timepicker" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                        </div>
-                                        <input name="hora_evento" type="text" class="form-control datetimepicker-input" data-target="#timepicker" /> -->
                             <div class="input-group-prepend" data-target="#timepicker" data-toggle="datetimepicker">
                                 <div class="input-group-text">
                                     <i class="fas fa-clock"></i></div>
                             </div>
-                            <input name="hora_evento" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker" placeholder="6:45 PM" />
+                            <input name="time" id="time" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker" placeholder="6:45 PM" />
 
 
                         </div>
@@ -104,49 +108,65 @@ try {
                     </div>
                     <!-- /.form group -->
                 </div>
-            </div>
 
-            <div class="form-group col-md-12">
-                <label for="name">Contact’s Name:</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="fas fa-user"></i>
-                        </span>
+
+                <div class="form-group col-md-6">
+                    <label for="guest">Guests: <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-users"></i>
+                            </span>
+                        </div>
+                        <input type="number" name="guest" id="guest" min="1" max="85" class="form-control" placeholder="Up to 85 guests">
+
                     </div>
-
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Your name">
-
                 </div>
-            </div>
 
-            <div class="form-group col-md-12">
-                <label for="phone_number">Phone Number:</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="fas fa-mobile"></i>
-                        </span>
+
+                <div class="form-group col-md-6">
+                    <label for="phone_number">Phone Number: <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-mobile"></i>
+                            </span>
+                        </div>
+
+                        <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="(703) 647-9702">
                     </div>
-
-                    <input type="number" name="phone_number" id="phone_number" class="form-control" placeholder="Your phone number">
                 </div>
-            </div>
-            <div class="form-group col-md-12">
-                <label for="special_instructions">Special instructions:</label>
-                <textarea id="special_instructions" name="special_instructions" class="form-control" rows="8" placeholder="Special instructions ..."></textarea>
-            </div>
 
-            <div class="col-md-12 text-center">
-                <input type="submit" class="bg-c-orange" value="Reserve">
-            </div>
+
+
+                <div class="form-group col-md-9">
+                    <label for="special_instructions">Special instructions:</label>
+                    <textarea id="special_instructions" name="special_instructions" class="form-control" rows="8" placeholder="Special instructions ..."></textarea>
+                </div>
+
+                <div class="form-group col-md-9 text-center">
+                    <div class="loader">
+                        <div class="duo duo1">
+                            <div class="dot dot-a"></div>
+                            <div class="dot dot-b"></div>
+                        </div>
+                        <div class="duo duo2">
+                            <div class="dot dot-a"></div>
+                            <div class="dot dot-b"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-9 text-center">
+                    <input type="hidden" name="action" id="action" value="create">
+                    <input type="submit" id="reservation-btn" class="btn-submit bg-c-orange" value="Reserve">
+                </div>
         </div>
 
     </form>
 
 
 
-    <div class="col-md-8 mx-auto">
+    <div class="col-md-9 mx-auto">
         <h3>Special Occasions and Accommodations</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis ab nostrum exercitationem quidem molestias ut. Aperiam, quaerat ipsa. Voluptatibus rerum iste tenetur natus a, aspernatur sunt culpa iusto. Molestiae.</p>
             <h3>Reserving Private Dining or Banquet Halls</h3>
