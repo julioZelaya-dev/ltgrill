@@ -423,8 +423,9 @@ $(document).ready(function() {
                 dataType: 'json',
                 success: function(data) {
                     hideLoader();
-                    clear_reservations();
-                    console.log(data);
+                    //clear_reservations();
+
+                    //console.log(data);
                     var resultado = data;
                     if (resultado.response == 'success') {
                         Swal.fire(
@@ -432,6 +433,7 @@ $(document).ready(function() {
                             'Your reservation was registered',
                             'success'
                         )
+                        $('#resertvation').trigger("reset");
 
                     } else {
                         Swal.fire(

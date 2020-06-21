@@ -24,10 +24,13 @@
     <script src="https://kit.fontawesome.com/306c815030.js" crossorigin="anonymous"></script>
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-
+    <!-- datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/r-2.2.5/rg-1.1.2/rr-1.2.7/sc-2.0.2/sp-1.1.1/datatables.min.css" />
 
     <link rel="stylesheet" href="css/user.css">
     <link href="main.css" rel="stylesheet">
+
+
 
 </head>
 

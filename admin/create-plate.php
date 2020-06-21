@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
@@ -29,7 +29,7 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="position-relative form-group">
-                                        <label for="plate_name" class="">Name:</label>
+                                        <label class="label-c" for="plate_name" class="">Name:</label>
                                         <input name="plate_name" id="plate_name" placeholder="Plate Name" type="text" class="form-control"></div>
                                 </div>
 
@@ -37,7 +37,7 @@
                             <div class="form-row">
                                 <div class="col-md-4">
                                     <div class="position-relative form-group">
-                                        <label for="plate_price" class="">Price:</label>
+                                        <label class="label-c" for="plate_price" class="">Price:</label>
                                         <input name="plate_price" id="plate_price" placeholder="Price" type="text" class="form-control"></div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="position-relative form-group">
-                                        <label for="plate_ingredients" class="">Ingredients:</label>
+                                        <label class="label-c" for="plate_ingredients" class="">Ingredients:</label>
                                         <textarea name="plate_ingredients" id="plate_ingredients" class="form-control" placeholder="Ingredients..."></textarea>
                                     </div>
                                 </div>
@@ -55,33 +55,27 @@
                                 <div class="col-md-12">
                                     <!-- imagen -->
                                     <div class="form-group">
-                                        <label for="plate-img">Image:</label>
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="plate_img" name="plate_img" placeholder="browse">
-                                                <label class="custom-file-label" for="plate-img">Browse</label>
-                                            </div>
+                                        <label class="label-c" for="plate_img">Image:</label>
+
+                                        <div class="custom-file">
+
+                                            <input type="file" class="custom-file-input" id="plate_img" name="plate_img" placeholder="browse">
+                                            <span class="custom-file-label">Browse</span>
 
                                         </div>
+
+
                                     </div>
                                     <!-- fin imagen  -->
 
                                 </div>
-
-
-
                             </div>
-
-
                             <div class="col-md-12">
+                                <label for="plate-img"></label>
                                 <div class="form-group">
-
                                     <img id="img-prev" class="img-fluid rounded" src="#" alt="">
                                 </div>
-
                             </div>
-
-
                             <?php
                             try {
                                 require_once('../includes/functions/bd_conn.php');
@@ -94,25 +88,31 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="plate_categories[]">Categories:</label>
+                                        <label class="label-c" for="plate_categories[]">Categories:</label>
                                     </div>
                                     <?php while ($cat = $resultado->fetch_assoc()) { ?>
-                                        <label class="p-categories">
-                                            <input type="checkbox" name="plate_categories[]" id="<?php echo $cat['id_cat']; ?>" value="<?php echo $cat['id_cat']; ?>">
-                                            &nbsp;<span><?php echo $cat['cat_name'] ?></span>
-                                        </label>
+
+                                        <div class="form-check  form-check-inline pl-2 p-categories">
+                                            <input class="form-check-input" type="checkbox" name="plate_categories[]" id="<?php echo $cat['id_cat']; ?>" value="<?php echo $cat['id_cat']; ?>">
+                                            <label class="form-check-label  label-c" for="plate_categories[]"><?php echo $cat['cat_name'] ?></label>
+                                        </div>
                                     <?php }; ?>
                                 </div>
                             </div>
-
                             <div class="col-md-12 text-center">
+                                <div class="lds-ring">
+                                    <div></div>
+                                    <div></div>
+                                    <div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center mt-4">
                                 <input type="hidden" name="action" id="action" value="create">
-                                <input class="submit" type="submit" value="Save">
+                                <input id="submit-btn" class="submit" type="submit" value="Save">
                             </div>
                         </form>
-
-
-
                     </div>
                 </div>
             </div>

@@ -39,24 +39,72 @@
                     </a>
                 </li>
                 <li class="app-sidebar__heading">Plates</li>
+                <div tabindex="-1" class="dropdown-divider"></div>
 
-                <li>
-                    <a href="create-plate.php">
-                        <i class="metismenu-icon pe-7s-plus"></i> Create
+                <li class="">
+                    <a href="#" aria-expanded="false">
+                        <i class="metismenu-icon fas fa-utensils"></i>
+                        Plates
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
+                    <ul class="mm-collapse" style="height: 7.04px;">
+                        <li>
+                            <a href="create-plate.php">
+                                <i class=" pe-7s-plus"></i>&nbsp;&nbsp; Create
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="list-plate.php">
+                                <i class=" pe-7s-note2"></i>&nbsp;&nbsp; List
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="#">
-                        <i class="metismenu-icon pe-7s-note2"></i> List
+                <li class="">
+                    <a href="#" aria-expanded="false">
+                        <i class="metismenu-icon fas fa-clipboard-list"></i>
+                        Categories
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
+                    <ul class="mm-collapse" style="height: 7.04px;">
+                        <li>
+                            <a href="create-plate.php">
+                                <i class=" pe-7s-plus"></i>&nbsp;&nbsp; Create
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="list-plate.php">
+                                <i class=" pe-7s-note2"></i>&nbsp;&nbsp; List
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
-                <li class="app-sidebar__heading">Menu</li>
-                <li>
-                    <a href="#">
-                        <i class="metismenu-icon pe-7s-note2"></i> List
+                <li class="">
+                    <a href="#" aria-expanded="false">
+                        <i class="metismenu-icon fas fa-list"></i>
+                        Menu
+                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                     </a>
+                    <ul class="mm-collapse" style="height: 7.04px;">
+                        <li>
+                            <a href="create-plate.php">
+                                <i class=" pe-7s-plus"></i>&nbsp;&nbsp; Create
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="list-plate.php">
+                                <i class=" pe-7s-note2"></i>&nbsp;&nbsp; List
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
             </ul>

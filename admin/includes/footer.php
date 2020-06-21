@@ -36,17 +36,30 @@
     </div>
 </div>
 </div>
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
 </div>
 </div>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!-- validator -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.16.0/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.16.0/dist/additional-methods.min.js"></script>
+<script src=""></script>
 <!-- bs-custom-file-input -->
 <script src="js/bs-custom-file-input.min.js"></script>
 <!-- notifications -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 <script src="js/app.js"></script>
 <script type="text/javascript" src="assets/scripts/main.js"></script>
+<!-- data table-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/r-2.2.5/rg-1.1.2/rr-1.2.7/sc-2.0.2/sp-1.1.1/datatables.min.js"></script>
+
+
+
 </body>
 
 </html>
