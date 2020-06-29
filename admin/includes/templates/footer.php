@@ -1,4 +1,4 @@
-<div class="app-wrapper-footer">
+<div class="app-wrapper-footer " style="position: fixed; bottom: 0; width: 100%; ">
     <div class="app-footer">
         <div class="app-footer__inner">
             <div class="app-footer-left">
@@ -50,8 +50,10 @@
 <script src="js/bs-custom-file-input.min.js"></script>
 <!-- notifications -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!-- select2 -->
+<script src="../js/select2.full.min.js"></script>
 
-<script src="js/app.js"></script>
+<script src="js/app.js?v=5"></script>
 <script type="text/javascript" src="assets/scripts/main.js"></script>
 <!-- data table-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>

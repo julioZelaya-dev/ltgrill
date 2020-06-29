@@ -11,9 +11,15 @@ include_once './includes/templates/header.php'; ?>
                 <div class="page-title-heading">
                     <div class="page-title-icon">
 
-                        <i class="fas fa-utensils icon-gradient bg-mean-fruit"></i>
+                        <i class="pe-7s-note2 icon-gradient bg-mean-fruit"></i>
                     </div>
-                    <div>Plates
+                    <?php $location = $_SESSION['location'];
+                    include_once '../includes/functions/bd_conn.php';
+                    $s = "SELECT * FROM location WHERE id = $location";
+                    $res = $conn->query($s);
+                    $loc = $res->fetch_assoc();
+                    ?>
+                    <div><b><?php echo $loc['name'] . ' ' . 'Menu' ?></b>
                         <div class="page-title-subheading">
                         </div>
                     </div>
@@ -26,23 +32,35 @@ include_once './includes/templates/header.php'; ?>
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
-                        a
+
                         <div class="card-body ">
-                            <table id="list_table" class="align-middle mb-0 table table-borderless table-striped table-hover">
+                            <table id="list_table" class="table  table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>Action</th>
                                         <th>Name</th>
                                         <th>Price</th>
-                                        <th>Ingredients</th>
                                         <th>Image</th>
-                                        <th>Categories</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
+
+                                    $location = $_SESSION['location'];
+
                                     try {
-                                        $sql = "SELECT * FROM plate ORDER BY plate_name ASC";
+                                        $sql = "SELECT
+                                        plate.plate_name,
+                                        plate.img,
+                                        plate.price,
+                                        menu.id_menu,
+                                        plate.id_plate
+
+                                      FROM menu
+                                        INNER JOIN plate
+                                          ON menu.id_plate = plate.id_plate
+                                      WHERE menu.id_location = $location";
                                         $resultado = $conn->query($sql);
                                     } catch (Exception $e) {
                                         //throw $th;
@@ -55,44 +73,23 @@ include_once './includes/templates/header.php'; ?>
 
                                     ?>
 
-                                        <tr id="tr-delete-<?php echo $plate['id_plate'] ?>">
+                                        <tr>
                                             <td class="">
-                                                <a href="#" data-id="<?php echo $plate['id_plate'] ?>" data-type="plate" data-img="<?php echo $plate['img'] ?>" class="badge badge-pill badge-danger options delete p-2 mb-1 d-block">
+                                                <a href="#" data-id="<?php echo $plate['id_plate'] ?>" data-type="menu" class="badge badge-pill badge-danger options delete p-2 mb-1 d-block">
                                                     Delete &nbsp; <i class="fa fa-trash"></i>
                                                 </a>
-                                                <a href="edit-plate.php?id=<?php echo $plate['id_plate']; ?>" class="badge badge-pill badge-success options p-2 mb-1 d-block">
-                                                    Update &nbsp; <i class="far fa-edit"></i>
-                                                </a>
+
 
                                             </td>
                                             <td><b><?php echo $plate['plate_name'] ?></b></td>
-                                            <td><?php echo $plate['price']; ?></td>
-                                            <td><?php echo $plate['ingredients']; ?></td>
+                                            <td><?php echo $plate['price'] ?></td>
                                             <?php if ($plate['img'] == '' || $plate['img'] == null) { ?>
                                                 <td><img class="rounded" src="../assets/img/plates/plate.png" alt="Img for <?php echo $plate['plate_name']; ?>" width="150px"></td>
                                             <?php } else { ?>
                                                 <td><img class="rounded" src="../assets/img/plates/<?php echo $plate['img']; ?>" alt="Img for <?php echo $plate['plate_name']; ?>" width="150px"></td>
 
-                                            <?php }
-                                            try {
-                                                $id = $plate['id_plate'];
-                                                $sql = "SELECT DISTINCT
-                                                plate.id_plate,
-                                                GROUP_CONCAT(DISTINCT plate_categories.cat_name) AS categories
-                                                FROM cat_detail
-                                                INNER JOIN plate
-                                                ON cat_detail.id_plate = plate.id_plate
-                                                INNER JOIN plate_categories
-                                                ON cat_detail.id_cat = plate_categories.id_cat
-                                            WHERE plate.id_plate =  $id";
-                                                $result = $conn->query($sql);
-                                                $followingdata = $result->fetch_assoc();
-                                            } catch (Exception $e) {
-                                                //throw $th;
-                                                $error = $e->getMessage();
-                                                echo $error;
-                                            } ?>
-                                            <td><b><?php echo $followingdata['categories'] ?></b></td>
+                                            <?php } ?>
+
                                         </tr>
                                     <?php  }
                                     ?>
@@ -102,9 +99,8 @@ include_once './includes/templates/header.php'; ?>
                                         <th>Action</th>
                                         <th>Name</th>
                                         <th>Price</th>
-                                        <th>Ingredients</th>
                                         <th>Image</th>
-                                        <th>Categories</th>
+
                                     </tr>
                                 </tfoot>
                             </table>

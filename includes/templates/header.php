@@ -49,13 +49,13 @@
 
 
 
-    <!-- nav bar -->
-    <?php include_once 'includes/templates/nav-bar.php' ?>
+
 
     <!-- end-navbar  -->
     <!-- site header  -->
     <header class="site-header">
-
+        <!-- nav bar -->
+        <?php include_once 'includes/templates/nav-bar.php' ?>
 
 
         <!-- ======= Hero Section ======= -->
@@ -81,7 +81,7 @@
                         <div class="carousel-item" style="background-image: url(assets/img/slide/3.jpg);">
                             <div class="carousel-container">
                                 <div class="carousel-content">
-                                    <p class="animated fadeInUp">Are you ready to make that call?</p>
+                                    <p class="animated fadeInUp">Check our <a role="button" class="text-white text-decoration-none " href="menu.php?location=1">menu</a></p>
 
                                 </div>
                             </div>

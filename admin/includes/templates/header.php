@@ -1,3 +1,5 @@
+<?php include_once './functions/sesion.php'; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -26,9 +28,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <!-- datatables -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/r-2.2.5/rg-1.1.2/rr-1.2.7/sc-2.0.2/sp-1.1.1/datatables.min.css" />
-
-    <link rel="stylesheet" href="css/user.css">
-    <link href="main.css" rel="stylesheet">
+    <!-- select2 -->
+    <link rel="stylesheet" href="../css/select2.min.css">
+    <link rel="stylesheet" href="../css/select2-bootstrap4.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/user.css?v=2">
+    <link href="main.css?v=1" rel="stylesheet">
 
 
 
@@ -76,36 +82,45 @@
                 <div class="app-header-right">
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
+                            <div class="widget-content-wrapper mr-5">
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/<?php echo $_SESSION['img'] ?>" alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
-                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
-                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                            <button type="button" tabindex="0" class="dropdown-item">Actions</button>
-                                            <div tabindex="-1" class="dropdown-divider"></div>
-                                            <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+
+                                            <a href="login.php?logout=true" tabindex="0" class="dropdown-item">Logout</a>
+
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
                                     <div class="widget-heading">
-                                        Alina Mclourd
+
+                                        <?php echo $_SESSION['name'] . ' ' . $_SESSION['l_name'] ?>
                                     </div>
                                     <div class="widget-subheading">
-                                        VP People Manager
+                                        <?php
+
+
+                                        $location = $_SESSION['location'];
+                                        include_once '../includes/functions/bd_conn.php';
+                                        $s = "SELECT * FROM location WHERE id = $location";
+                                        $res = $conn->query($s);
+                                        $loc = $res->fetch_assoc();
+
+
+                                        if ($_SESSION['access'] == '1') {
+                                            echo "Admin" . " " . $loc['name'];
+                                        } else {
+                                            echo "Manager" . " " . $loc['name'];
+                                        } ?>
                                     </div>
                                 </div>
-                                <div class="widget-content-right header-user-info ml-3">
-                                    <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
-                                        <i class="fa text-white fa-calendar pr-1 pl-1"></i>
-                                    </button>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -114,4 +129,4 @@
             <!-- end-header -->
         </div>
 
-        <div class="app-main">
+        <div class="app-main animate__animated animate__fadeIn ">

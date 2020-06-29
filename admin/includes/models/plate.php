@@ -40,8 +40,17 @@ if ($_POST['action'] === 'create') {
     // statement 
 
     try {
-        $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients, img) VALUES (?, ?, ?, ?)');
-        $stmt->bind_param('ssss', $plate_name, $plate_price, $plate_ingredients, $img_url);
+
+
+        if ($_FILES['plate_img']['size'] > 0) {
+            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients, img) VALUES (?, ?, ?, ?)');
+            $stmt->bind_param('ssss', $plate_name, $plate_price, $plate_ingredients, $img_url);
+            $img_exist = true;
+        } else {
+            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients) VALUES (?, ?, ?)');
+            $stmt->bind_param('sss', $plate_name, $plate_price, $plate_ingredients);
+            $img_exist = false;
+        }
         $stmt->execute();
         $id_insert = $stmt->insert_id;
 
@@ -52,11 +61,19 @@ if ($_POST['action'] === 'create') {
         }
 
         if ($stmt->affected_rows) {
-            $response = array(
-                'response' => 'success',
-                'id_insert' => $id_insert,
-                'resultado_imagen' => $img_result
-            );
+            if ($img_exist) {
+                $response = array(
+                    'response' => 'success',
+                    'id_insert' => $id_insert,
+                    'img' => $img_result
+                );
+            } else {
+                $response = array(
+                    'response' => 'success',
+                    'id_insert' => $id_insert,
+                    'img' => 'none'
+                );
+            }
         } else {
             $response = array(
                 'response' => 'error'
@@ -141,10 +158,10 @@ if ($_POST['action'] === "update") {
         $stmt2->close();
         $affected = $stmt->affected_rows;
         if ($affected > 0) {
-            if ($_FILES['plate_img']['size'] > 0) {
+            if ($_FILES['plate_img']['size'] > 0 && $actual_img != '') {
                 //delete old img
                 $path = '../../../assets/img/plates/' . $actual_img;
-                chown($path, 666);
+                //chown($path, 666);
                 if (unlink($path)) {
                     $response = array(
                         'response' => 'success-update',
@@ -187,21 +204,27 @@ if ($_POST['action'] == 'delete') {
         $stmt = $conn->prepare('DELETE FROM plate WHERE id_plate = ? ');
         $stmt->bind_param('i', $id);
         $stmt->execute();
-        if ($stmt->affected_rows) {
+        if ($stmt->affected_rows && ($_POST['img'] != null || $_POST['img'] != "")) {
 
             //delete old img
             $path = '../../../assets/img/plates/' . $img;
-            chown($path, 666);
+            //chown($path, 0755);
             if (unlink($path)) {
                 $response = array(
                     'response' => 'success',
-                    'id_deleted' => $id
+                    'id_deleted' => $id,
+                    'img_deleted' => $img
                 );
             } else {
                 $response = array(
                     'response' => 'error img'
                 );
             }
+        } elseif ($stmt->affected_rows) {
+            $response = array(
+                'response' => 'success',
+                'id_deleted' => $id
+            );
         } else {
             $response = array(
                 'response' => 'error'

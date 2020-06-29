@@ -60,6 +60,10 @@ table.table {
     width: 100%;
 }
 
+.table tr td {
+    text-align: center;
+}
+
 .lds-ring {
     display: inline-block;
     position: relative;

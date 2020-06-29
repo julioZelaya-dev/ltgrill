@@ -1,6 +1,8 @@
-<?php include_once './includes/header.php'; ?>
+<?php
+
+include_once './includes/templates/header.php'; ?>
 <!-- side-bar -->
-<?php include_once './includes/siderbar.php'; ?>
+<?php include_once './includes/templates/siderbar.php'; ?>
 <!-- end-side-bar -->
 <div class="app-main__outer">
     <div class="app-main__inner">
@@ -20,13 +22,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mx-auto">
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
-
-                        <form action="includes/models/plate.php" method="post" id="plate">
-                            <div class="form-row">
+                        <div class="col-md-12 text-center">
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <form action="includes/models/plate.php" method="post" id="plate" class="form-submit animate__animated animate__fadeIn" style="display: none;">
+                            <div class=" form-row">
                                 <div class="col-md-12">
                                     <div class="position-relative form-group">
                                         <label class="label-c" for="plate_name" class="">Name:</label>
@@ -59,7 +69,7 @@
 
                                         <div class="custom-file">
 
-                                            <input type="file" class="custom-file-input" id="plate_img" name="plate_img" placeholder="browse">
+                                            <input type="file" class="custom-file-input" id="img" name="plate_img" placeholder="browse">
                                             <span class="custom-file-label">Browse</span>
 
                                         </div>
@@ -99,18 +109,10 @@
                                     <?php }; ?>
                                 </div>
                             </div>
-                            <div class="col-md-12 text-center">
-                                <div class="lds-ring">
-                                    <div></div>
-                                    <div></div>
-                                    <div>
-                                    </div>
-                                    <div></div>
-                                </div>
-                            </div>
+
                             <div class="col-md-12 text-center mt-4">
                                 <input type="hidden" name="action" id="action" value="create">
-                                <input id="submit-btn" class="submit" type="submit" value="Save">
+                                <input id="" class="submit submit-btn" type="submit" value="Save">
                             </div>
                         </form>
                     </div>
@@ -118,4 +120,4 @@
             </div>
         </div>
     </div>
-    <?php include_once './includes/footer.php' ?>
+    <?php include_once './includes/templates/footer.php' ?>

@@ -1,13 +1,14 @@
 <?php
+
 $id = $_GET['id'];
 if (!filter_var($id, FILTER_VALIDATE_INT)) {
     die("error");
 }
 
-require_once '../includes/functions/bd_conn.php';
-include_once './includes/header.php'; ?>
+
+include_once './includes/templates/header.php'; ?>
 <!-- side-bar -->
-<?php include_once './includes/siderbar.php'; ?>
+<?php include_once './includes/templates/siderbar.php'; ?>
 <!-- end-side-bar -->
 <div class="app-main__outer">
     <div class="app-main__inner">
@@ -27,15 +28,24 @@ include_once './includes/header.php'; ?>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mx-auto">
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title"></h5>
+                        <div class="col-md-12 text-center ">
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
                         <?php
-
+                        require_once('../includes/functions/bd_conn.php');
                         $sql = "SELECT * FROM plate WHERE id_plate = $id";
-                        $resultado = $conn->query($sql);
-                        $plate = $resultado->fetch_assoc();
+                        $result = $conn->query($sql);
+                        $plate = $result->fetch_assoc();
 
                         /*   echo "<pre>";
                         var_dump($plate);
@@ -43,7 +53,7 @@ include_once './includes/header.php'; ?>
 
                         ?>
 
-                        <form action="includes/models/plate.php" method="post" id="plate">
+                        <form action="includes/models/plate.php" method="post" id="plate" class="form-submit" style="display: none;">
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="position-relative form-group">
@@ -77,7 +87,7 @@ include_once './includes/header.php'; ?>
 
                                         <div class="custom-file">
 
-                                            <input type="file" class="custom-file-input" id="plate_img" name="plate_img">
+                                            <input type="file" class="custom-file-input" id="img" name="plate_img">
                                             <label for="plate_img" class="custom-file-label"><?php echo $plate['img']; ?></label ">
 
                                         </div>
@@ -164,15 +174,7 @@ include_once './includes/header.php'; ?>
                                                 <?php }; ?>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 text-center ">
-                                            <div class="lds-ring">
-                                                <div></div>
-                                                <div></div>
-                                                <div>
-                                                </div>
-                                                <div></div>
-                                            </div>
-                                        </div>
+
                                         <div class="col-md-12 text-center">
                                             <input type="hidden" name="action" id="action" value="update">
                                             <input type="hidden" name="id_plate" value="<?php echo $plate['id_plate'] ?>">
@@ -185,4 +187,4 @@ include_once './includes/header.php'; ?>
             </div>
         </div>
     </div>
-    <?php include_once './includes/footer.php' ?>
+    <?php include_once './includes/templates/footer.php' ?>
