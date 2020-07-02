@@ -23,11 +23,17 @@ if (isset($_POST['login-admin'])) {
             $location,
             $edited
         );
+
+
+
+
+
         if ($stmt->affected_rows) {
             $existe = $stmt->fetch();
             if ($existe) {
                 // user_name si existe
                 if (password_verify($password, $password_bd)) {
+
 
 
                     session_start();
@@ -38,7 +44,6 @@ if (isset($_POST['login-admin'])) {
                     $_SESSION['img'] = $img;
                     $_SESSION['access'] = $access;
                     $_SESSION['location'] = $location;
-
 
                     $response = array(
                         'response' => 'success'
@@ -55,12 +60,12 @@ if (isset($_POST['login-admin'])) {
                 );
             }
         };
-
-        $stmt->close();
-        $conn->close();
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
     }
+    $stmt->close();
+
+    $conn->close();
 
     die(json_encode($response));
 }

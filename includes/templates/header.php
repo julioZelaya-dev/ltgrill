@@ -17,7 +17,7 @@
 
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/main.css?v=4">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">

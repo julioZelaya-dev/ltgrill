@@ -20,6 +20,7 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
 </head>
 
 <body>
@@ -32,29 +33,37 @@ if (isset($_GET['logout'])) {
                         <div class="card text-center modal-dialog mx-auto animate__animated animate__fadeInDownBig ">
                             <div class="card-header bg-midnight-bloom text-white p-5">
                                 <div class=" w-100">
-                                    <h4 class="text-uppercase font-weight-bold">Sign In</h4>
+                                    <h4 class="text-uppercase">Sign In</h4>
                                 </div>
 
                             </div>
                             <div class="card-body modal-content">
-
-                                <form class=" " id="login_admin" name="login_admin" action="login-admin.php" method="POST">
+                                <div class="col-md-12 text-center">
+                                    <div class="lds-ring">
+                                        <div></div>
+                                        <div></div>
+                                        <div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <form id="login_admin" name="login_admin" class="form-submit" action="login-admin.php" method="POST">
                                     <div class="form-row">
                                         <div class="col-md-12 mb-4 mt-4">
                                             <div class="position-relative form-group">
-                                                <input name="user" placeholder="User name" type="text" class="form-control">
+                                                <input name="user" placeholder="User name" type="text" class="form-control font-weight-light">
                                             </div>
                                         </div>
                                         <div class="col-md-12 mb-4">
                                             <div class="position-relative form-group">
-                                                <input name="password" placeholder="Password" type="password" class="form-control">
+                                                <input name="password" placeholder="Password" type="password" class="form-control font-weight-light">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class=" col-md-12 text-center">
                                         <input type="hidden" name="login-admin">
-                                        <input class="btn bg-success text-white btn-lg pr-3 pl-3 badge-pill w-50 text-uppercase font-weight-bold" type="submit" value="Login">
+                                        <input class="btn bg-success text-white btn-lg pr-3 pl-3 badge-pill w-50 text-uppercase" type="submit" value="Login">
 
                                     </div>
 

@@ -30,8 +30,17 @@ include_once './includes/templates/header.php'; ?>
                     <div class="card-body">
                         <h5 class="card-title"></h5>
 
-                        <div class="card-body ">
-                            <table id="list_table" class="table  table-bordered table-striped">
+                        <div class="col-md-12 text-center">
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="card-body  ">
+                            <table id="list_table" style=" display: none; " class="item-table  align-middle mb-0 table table-borderless table-striped table-hover">
                                 <thead>
                                     <tr>
                                         <th>Action</th>

@@ -56,6 +56,10 @@ input.submit:focus {
     font-size: 14.5px;
 }
 
+.form-submit {
+    margin-bottom: 60px;
+}
+
 table.table {
     width: 100%;
 }
@@ -114,4 +118,16 @@ table.table {
     padding: 4px;
     margin-bottom: 5px;
     margin-right: 5px!important;
+}
+
+
+/* reservations */
+
+.radiobtn {
+    font-weight: 700;
+    font-size: 20px;
+    width: 80PX;
+    padding: 10px;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #f8c46e!important;
 }

@@ -88,25 +88,48 @@ try {
                 </div>
 
 
-                <div class="bootstrap-timepicker col-md-6">
+
+                <div class="form-group mb-3 col-md-12 p2">
+                    <div class="p2">
+                        <label class="label-c" for="hour">Time:</label>
+                        <br>
+
+                        <?php
+                        $h = 11;
+                        $m = 00;
 
 
-                    <div class="form-group">
-                        <label>Time: <span class="text-danger">*</span></label>
+                        while ($h <= 21) {
+                            if ($m == 0) {
+                                $hour = $h . ':00';
+                            } else {
+                                $hour = $h . ':' . $m;
+                            }
+                        ?>
 
-                        <div class="input-group date" id="timepicker" data-target-input="nearest">
-
-                            <div class="input-group-prepend" data-target="#timepicker" data-toggle="datetimepicker">
-                                <div class="input-group-text">
-                                    <i class="fas fa-clock"></i></div>
+                            <div class="custom-control custom-radio custom-control-inline mb-2 radiobtn ">
+                                <input type="radio" class="custom-control-input" id="<?php echo $hour ?>" name="time" value="<?php echo $hour . ':00' ?>">
+                                <label class="custom-control-label" for="<?php echo $hour ?>"><?php echo $hour  ?></label>
                             </div>
-                            <input name="time" id="time" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker" placeholder="6:45 PM" />
 
 
-                        </div>
-                        <!-- /.input group -->
+
+
+
+
+                        <?php
+                            if ($h == 21) {
+                                break;
+                            }
+                            if ($m == 45) {
+                                $m = 0;
+
+                                $h += 1;
+                            } else {
+                                $m += 15;
+                            }
+                        }; ?>
                     </div>
-                    <!-- /.form group -->
                 </div>
 
 
@@ -139,7 +162,7 @@ try {
 
 
 
-                <div class="form-group col-md-9">
+                <div class="form-group col-md-9 mx-auto">
                     <label for="special_instructions">Special instructions:</label>
                     <textarea id="special_instructions" name="special_instructions" class="form-control" rows="8" placeholder="Special instructions ..."></textarea>
                 </div>
@@ -156,7 +179,7 @@ try {
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-md-9 text-center">
+                <div class="form-group col-md-9 mx-auto text-center">
                     <input type="hidden" name="action" id="action" value="create">
                     <input type="submit" id="reservation-btn" class="btn-submit bg-c-orange" value="Reserve">
                 </div>

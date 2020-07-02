@@ -14,8 +14,8 @@
 
                         <i class="pe-7s-note2 icon-gradient bg-mean-fruit"></i>
                     </div>
-                    <div>Admins
-                        <div class="page-title-subheading">Fill the fields and create a new admin.
+                    <div>Menu
+                        <div class="page-title-subheading">
                         </div>
                     </div>
                 </div>

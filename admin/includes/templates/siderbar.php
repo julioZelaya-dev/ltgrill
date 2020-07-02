@@ -87,7 +87,7 @@
                     <li class="">
                         <a href="#" aria-expanded="false">
                             <i class="metismenu-icon pe-7s-users"></i>
-                            Admins
+                            Users
                             <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                         </a>
                         <ul class="mm-collapse" style="height: 7.04px;">
@@ -111,7 +111,7 @@
                     </a>
                     <ul class="mm-collapse" style="height: 7.04px;">
                         <li>
-                            <a href="create-menu.php">Add</a>
+                            <a href="create-menu.php">Add Plate</a>
                         </li>
 
                         <li>
@@ -128,11 +128,11 @@
                     </a>
                     <ul class="mm-collapse" style="height: 7.04px;">
                         <li>
-                            <a href="create-admin.php">Create</a>
+                            <a href="create-reservation.php">Create</a>
                         </li>
 
                         <li>
-                            <a href="list-admin.php">List</a>
+                            <a href="list-reservation.php">List</a>
                         </li>
 
 

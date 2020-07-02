@@ -31,10 +31,16 @@
     <!-- select2 -->
     <link rel="stylesheet" href="../css/select2.min.css">
     <link rel="stylesheet" href="../css/select2-bootstrap4.min.css">
+    <!-- date picker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- time picker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="css/user.css?v=2">
-    <link href="main.css?v=1" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/user.css?v=5">
+    <link href="main.css?v=2" rel="stylesheet">
 
 
 
@@ -65,13 +71,35 @@
                 </div>
             </div>
             <div class="app-header__menu">
-                <span>
+                <!-- <span>
                     <button type="button" class="btn-icon btn-icon-only btn btn-dark btn-sm mobile-toggle-header-nav active">
                         <span class="btn-icon-wrapper">
                             <i class="fa fa-ellipsis-v fa-w-6"></i>
+
                         </span>
+
                     </button>
-                </span>
+
+                </span> -->
+                <a href="login.php?logout=true" tabindex="0" class="btn badge-pill bg-dark text-light ">Logout &nbsp;<b><?php echo $_SESSION['name'] . ' ' . $_SESSION['l_name'] ?></b> <br>
+                    <span class="widget-subheading text-secondary">
+                        <?php
+
+
+                        $location = $_SESSION['location'];
+                        include_once '../includes/functions/bd_conn.php';
+                        $s = "SELECT * FROM location WHERE id = $location";
+                        $res = $conn->query($s);
+                        $loc = $res->fetch_assoc();
+
+
+                        if ($_SESSION['access'] == '1') {
+                            echo "Admin" . " " . $loc['name'];
+                        } else {
+                            echo "Manager" . " " . $loc['name'];
+                        } ?>
+                    </span> </a>
+
             </div>
 
             <!-- header  -->
@@ -86,7 +114,7 @@
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/<?php echo $_SESSION['img'] ?>" alt="">
+                                            <img class="rounded-circle" src="assets/images/avatars/<?php echo $_SESSION['img'] ?>" alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">

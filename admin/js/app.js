@@ -11,12 +11,54 @@ function hideLoader() {
     $(".form-submit").slideDown("slow");
 }
 
+
+function showtable() {
+
+    $(".item-table").slideDown('slow');
+}
+
+function hidetable() {
+
+    $(".item-table").slideUp("fast");
+}
+
 showLoader();
+hidetable();
 
 
 $(document).ready(function() {
+    showtable();
     // bootstrap file input
     bsCustomFileInput.init();
+
+    //date picker 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    $('input[name="date_reservation"]').daterangepicker({
+        "singleDatePicker": true,
+        "showDropdowns": true,
+        "linkedCalendars": false,
+        "showCustomRangeLabel": false,
+        "minDate": `${today}`,
+        "startDate": "06/01/2020",
+        "endDate": "06/01/2020",
+        "opens": "right",
+        "buttonClasses": "btn btn-sm",
+        "applyButtonClasses": "bg-c-orange",
+        "cancelClass": "btn-danger",
+        /* "isInvalidDate": function(date) {
+            //return true if date is sunday or saturday
+            return (date.day() == 1 || date.day() == 6);
+        } */
+    });
+
+    $('#timepicker').datetimepicker({
+        format: 'LT'
+    });
 
     if ($('#list_table')) {
         $('#list_table').DataTable({
@@ -129,8 +171,8 @@ $(document).ready(function() {
             },
             messages: {
                 'plate_categories[]': {
-                    required: "You must check at least 1 box",
-                    maxlength: "Check no more than {0} boxes"
+                    required: "You must check at least 1 box"
+
                 }
             }
         });
@@ -449,7 +491,7 @@ $(document).ready(function() {
                             'success'
                         )
                         $('#categorie').trigger("reset");
-                        $('#img-prev').attr('src', '');
+
                     } else if (result.response == 'success-update') {
 
                         Swal.fire(
@@ -551,15 +593,114 @@ $(document).ready(function() {
                 }
             })
         }
+
+
+
     });
 
+    if ($('#reservation')) {
+        hideLoader();
+
+
+        $.validator.setDefaults({
+
+            submitHandler: function() {
+
+                // document.querySelector('#reservation').addEventListener('submit', create_res);
+
+
+            }
+        });
 
 
 
 
 
 
+        $($('#reservation')).validate({
+            rules: {
+                guest: {
+                    required: true,
+                    number: true,
+                    range: [1, 85]
+                },
+                hora_evento: {
+                    required: true,
+                    time12h: true
 
+                },
+                name: {
+                    required: true
+                },
+                phone_number: {
+                    required: true,
+                    phoneUS: true
+                },
+                time: {
+                    required: true
+                },
+                hour: {
+                    required: true
+                }
+
+
+
+            }
+        });
+
+
+
+    }
+
+    $('#reservation').on('submit', function(e) {
+
+        if ($('#reservation').valid()) {
+
+            showLoader();
+            e.preventDefault();
+            var datos = $(this).serializeArray();
+            // console.log(datos);
+            //console.log(datos);
+            $.ajax({
+                type: $(this).attr('method'),
+                data: datos,
+                url: $(this).attr('action'),
+                dataType: 'json',
+                success: function(data) {
+                    hideLoader();
+                    //clear_reservations();
+
+                    console.log(data);
+                    var result = data;
+                    if (result.response == 'success') {
+                        Swal.fire(
+                            'Thanks!!',
+                            'Your reservation was registered',
+                            'success'
+                        )
+                        $('#resertvation').trigger("reset");
+
+                    } else if (result.response == 'success-update') {
+
+                        Swal.fire(
+                            'Update was succesfull',
+                            'OK',
+                            'success'
+                        ).then(function() {
+                            location.reload();
+                        })
+
+                    } else {
+                        Swal.fire(
+                            'Error!',
+                            'There was an error, try again in some minutes',
+                            'error'
+                        )
+                    }
+                }
+            })
+        }
+    });
 
     $('.select2').select2({
         theme: 'bootstrap4',

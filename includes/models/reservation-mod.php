@@ -14,12 +14,12 @@ if ($action == 'create') {
     $s_instructions = $_POST['special_instructions'];
     // covertir la hora de 12 a 24 
     $time = $_POST['time'];
-    $hora_formateada = date('H:i', strtotime($time));
+    //$hora_formateada = date('H:i', strtotime($time));
 
     try {
         $stmt = $conn->prepare("INSERT INTO reservation (id_location, guests, reservation_date, reservation_time, contact_name, phone, special_instructions) 
         VALUES ( ?, ?, ?, ?, ?, ?, ? )");
-        $stmt->bind_param('iisssss', $location, $guest, $fecha_formateada, $hora_formateada, $name, $phone, $s_instructions);
+        $stmt->bind_param('iisssss', $location, $guest, $time, $hora_formateada, $name, $phone, $s_instructions);
         $stmt->execute();
         $inserted = $stmt->insert_id;
         if ($stmt->affected_rows) {
