@@ -112,7 +112,7 @@
                     </div>
 
 
-                    <div class="form-group mb-3 col-md-12 p2">
+                    <div class="form-group mb-3 col-md-11 mx-auto">
                         <div class="p2">
                             <label class="label-c" for="time">Time:</label>
                             <br>

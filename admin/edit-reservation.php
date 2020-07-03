@@ -9,8 +9,6 @@ if (!filter_var($id, FILTER_VALIDATE_INT) || empty($id)) {
 ?>
 
 
-?>
-
 <!-- end-side-bar -->
 <div class="app-main__outer">
     <div class="app-main__inner">

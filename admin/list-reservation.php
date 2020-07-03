@@ -57,7 +57,6 @@ include_once './includes/templates/header.php'; ?>
                                         $reservation_list = "SELECT *
                                     FROM reservation
                                     WHERE reservation.id_location = $location
-                                    AND reservation.reservation_date = CURRENT_DATE
                                     ORDER BY reservation.reservation_time";
                                         $reservation_list = $conn->query($reservation_list);
                                     } catch (Exception $e) {

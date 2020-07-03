@@ -371,6 +371,11 @@ $(document).ready(function() {
                 },
                 time: {
                     required: true
+                },
+
+                special_instructions: {
+                    required: false,
+                    maxlength: 600
                 }
 
 
@@ -425,7 +430,7 @@ $(document).ready(function() {
                     hideLoader();
                     //clear_reservations();
 
-                    //console.log(data);
+                    console.log(data);
                     var resultado = data;
                     if (resultado.response == 'success') {
                         Swal.fire(

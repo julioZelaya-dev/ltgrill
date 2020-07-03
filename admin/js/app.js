@@ -167,6 +167,10 @@ $(document).ready(function() {
                     required: false,
 
                 },
+                special_instructions: {
+                    required: false,
+                    maxlength: 600
+                }
 
             },
             messages: {

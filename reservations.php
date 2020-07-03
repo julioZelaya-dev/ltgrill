@@ -89,7 +89,7 @@ try {
 
 
 
-                <div class="form-group mb-3 col-md-12 p2">
+                <div class="form-group mb-3 col-md-10 mx-auto">
                     <div class="p2">
                         <label class="label-c" for="hour">Time:</label>
                         <br>
@@ -107,8 +107,8 @@ try {
                             }
                         ?>
 
-                            <div class="custom-control custom-radio custom-control-inline mb-2 radiobtn ">
-                                <input type="radio" class="custom-control-input" id="<?php echo $hour ?>" name="time" value="<?php echo $hour . ':00' ?>">
+                            <div class="custom-control custom-control-inline custom-radio mb-2 radiobtn ">
+                                <input type="radio" class="custom-control-input " id="<?php echo $hour ?>" name="time" value="<?php echo $hour . ':00' ?>">
                                 <label class="custom-control-label" for="<?php echo $hour ?>"><?php echo $hour  ?></label>
                             </div>
 
@@ -163,27 +163,28 @@ try {
 
 
                 <div class="form-group col-md-9 mx-auto">
+
                     <label for="special_instructions">Special instructions:</label>
                     <textarea id="special_instructions" name="special_instructions" class="form-control" rows="8" placeholder="Special instructions ..."></textarea>
-                </div>
 
-                <div class="form-group col-md-9 text-center">
-                    <div class="loader">
-                        <div class="duo duo1">
-                            <div class="dot dot-a"></div>
-                            <div class="dot dot-b"></div>
-                        </div>
-                        <div class="duo duo2">
-                            <div class="dot dot-a"></div>
-                            <div class="dot dot-b"></div>
+
+                    <div class="form-group col-md-9 mx-auto text-center">
+                        <div class="loader">
+                            <div class="duo duo1">
+                                <div class="dot dot-a"></div>
+                                <div class="dot dot-b"></div>
+                            </div>
+                            <div class="duo duo2">
+                                <div class="dot dot-a"></div>
+                                <div class="dot dot-b"></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="form-group col-md-9 mx-auto text-center">
+                        <input type="hidden" name="action" id="action" value="create">
+                        <input type="submit" id="reservation-btn" class="btn-submit bg-c-orange" value="Reserve">
+                    </div>
                 </div>
-                <div class="form-group col-md-9 mx-auto text-center">
-                    <input type="hidden" name="action" id="action" value="create">
-                    <input type="submit" id="reservation-btn" class="btn-submit bg-c-orange" value="Reserve">
-                </div>
-        </div>
 
     </form>
 
