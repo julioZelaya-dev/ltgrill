@@ -106,7 +106,9 @@ $(document).ready(function() {
     });
     menuIsotope.isotope({
         filter: ('.filter-1')
+
     });
+
 
 
     $('#menu-flters li').on('click', function() {
@@ -169,8 +171,19 @@ $(document).ready(function() {
 
     //Timepicker
     $('#timepicker').datetimepicker({
-        format: 'LT'
+        format: 'LT',
+
+
+        maxDate: new Date(2010, 11, 20, 21, 00),
+
+        minDate: new Date(2010, 11, 20, 11, 00),
+
+        stepping: 15,
+
+        defaultDate: new Date(2010, 11, 20, 11, 00),
+
     });
+
 
     //validation on offers
 

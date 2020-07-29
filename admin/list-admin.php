@@ -68,7 +68,7 @@ include_once './includes/templates/header.php'; ?>
 
 
 
-                                        <tr>
+                                        <tr id="tr-delete-<?php echo $user['id_admin'] ?>">
                                             <td class="">
                                                 <a href="#" data-id="<?php echo $user['id_admin'] ?>" data-type="admin" data-img="<?php echo $user['img'] ?>" class="badge badge-pill badge-danger options delete p-2 mb-1 d-block">
                                                     Delete &nbsp; <i class="fa fa-trash"></i>

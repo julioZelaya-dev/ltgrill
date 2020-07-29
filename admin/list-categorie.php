@@ -49,7 +49,8 @@ include_once './includes/templates/header.php'; ?>
                                 <tbody>
                                     <?php
                                     try {
-                                        $sql = "SELECT * FROM plate_categories ORDER BY cat_name ASC";
+                                        $location = $_SESSION['location'];
+                                        $sql = "SELECT * FROM plate_categories WHERE id_location = $location ORDER BY cat_name ASC";
                                         $result = $conn->query($sql);
                                     } catch (Exception $e) {
                                         //throw $th;
@@ -62,21 +63,24 @@ include_once './includes/templates/header.php'; ?>
 
 
 
-                                        <tr>
+                                        <tr id="tr-delete-<?php echo $categorie['id_cat'] ?>">
                                             <td class="">
-                                                <a href="#" data-id="<?php echo $categorie['id_cat'] ?>" data-type="categorie" class="badge badge-pill badge-danger options delete p-2 mb-1">
-                                                    Delete &nbsp; <i class="fa fa-trash"></i>
-                                                </a>
-                                                <a href="edit-categorie.php?id=<?php echo $categorie['id_cat']; ?>" class="badge badge-pill badge-success options p-2 mb-1">
-                                                    Update &nbsp; <i class="far fa-edit"></i>
-                                                </a>
+                                                <?php if ($categorie['cat_name'] != 'Daily Specials') : ?>
+
+                                                    <a href="#" data-id="<?php echo $categorie['id_cat'] ?>" data-type="categorie" class="badge badge-pill badge-danger options delete p-2 mb-1">
+                                                        Delete &nbsp; <i class="fa fa-trash"></i>
+                                                    </a>
+                                                    <a href="edit-categorie.php?id=<?php echo $categorie['id_cat']; ?>" class="badge badge-pill badge-success options p-2 mb-1">
+                                                        Update &nbsp; <i class="far fa-edit"></i>
+                                                    </a>
+                                                <?php endif; ?>
 
                                             </td>
                                             <td><b><?php echo $categorie['cat_name'] ?></b></td>
-
-                                        <?php
+                                        </tr>
+                                    <?php
                                     }
-                                        ?>
+                                    ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>

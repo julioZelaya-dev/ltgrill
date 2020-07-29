@@ -55,7 +55,7 @@ try {
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group col-md-6">
-                    <label for="name">Contact’s Name: <span class="text-danger">*</span></label>
+                    <label for="name">Name: <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -87,50 +87,35 @@ try {
 
                 </div>
 
+                <div class="col-md-6">
+                    <div class="bootstrap-timepicker">
 
 
-                <div class="form-group mb-3 col-md-10 mx-auto">
-                    <div class="p2">
-                        <label class="label-c" for="hour">Time:</label>
-                        <br>
+                        <div class="form-group">
+                            <label>Time:</label>
 
-                        <?php
-                        $h = 11;
-                        $m = 00;
+                            <div class="input-group date" id="timepicker" data-target-input="nearest">
+
+                                <!-- <div class="input-group-prepend" data-target="#timepicker" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                        </div>
+                                        <input name="hora_evento" type="text" class="form-control datetimepicker-input" data-target="#timepicker" /> -->
+                                <div class="input-group-prepend" data-target="#timepicker" data-toggle="datetimepicker">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-clock"></i></div>
+                                </div>
+                                <input name="time" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker" value="11:00 AM" />
 
 
-                        while ($h <= 21) {
-                            if ($m == 0) {
-                                $hour = $h . ':00';
-                            } else {
-                                $hour = $h . ':' . $m;
-                            }
-                        ?>
-
-                            <div class="custom-control custom-control-inline custom-radio mb-2 radiobtn ">
-                                <input type="radio" class="custom-control-input " id="<?php echo $hour ?>" name="time" value="<?php echo $hour . ':00' ?>">
-                                <label class="custom-control-label" for="<?php echo $hour ?>"><?php echo $hour  ?></label>
                             </div>
-
-
-
-
-
-
-                        <?php
-                            if ($h == 21) {
-                                break;
-                            }
-                            if ($m == 45) {
-                                $m = 0;
-
-                                $h += 1;
-                            } else {
-                                $m += 15;
-                            }
-                        }; ?>
+                            <!-- /.input group -->
+                        </div>
+                        <!-- /.form group -->
                     </div>
                 </div>
+
+
+
 
 
                 <div class="form-group col-md-6">

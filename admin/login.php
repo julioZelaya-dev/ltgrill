@@ -20,21 +20,26 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/user.css">
 </head>
 
 <body>
     <div class="app-container app-theme-white body-tabs-shadow closed-sidebar-mobile closed-sidebar">
         <div class="app-container closed-sidebar-mobile closed-sidebar">
-            <div class="h-100 bg-plum-plate bg-animation">
+            <div class="h-100 bg-sunny-morning  bg-animation">
                 <div class="d-flex h-100 justify-content-center align-items-center">
                     <div class="mx-auto app-login-box col-md-8">
                         <div class="app-logo-inverse mx-auto mb-3"></div>
                         <div class="card text-center modal-dialog mx-auto animate__animated animate__fadeInDownBig ">
-                            <div class="card-header bg-midnight-bloom text-white p-5">
-                                <div class=" w-100">
-                                    <h4 class="text-uppercase">Sign In</h4>
+                            <div class="card-header bg-dark text-white p-5">
+                                <div class="w-50 mx-auto">
+                                    <a href="../index.php">
+                                        <img class="img-resposive " style="max-width: 100%; cursor:pointer; pointer-events: auto;" src="../assets/img/logo.png" alt="">
+
+                                    </a>
                                 </div>
+
 
                             </div>
                             <div class="card-body modal-content">
@@ -50,12 +55,12 @@ if (isset($_GET['logout'])) {
                                 <form id="login_admin" name="login_admin" class="form-submit" action="login-admin.php" method="POST">
                                     <div class="form-row">
                                         <div class="col-md-12 mb-4 mt-4">
-                                            <div class="position-relative form-group">
+                                            <div class="position-relative form-group login-field">
                                                 <input name="user" placeholder="User name" type="text" class="form-control font-weight-light">
                                             </div>
                                         </div>
                                         <div class="col-md-12 mb-4">
-                                            <div class="position-relative form-group">
+                                            <div class="position-relative form-group login-field">
                                                 <input name="password" placeholder="Password" type="password" class="form-control font-weight-light">
                                             </div>
                                         </div>

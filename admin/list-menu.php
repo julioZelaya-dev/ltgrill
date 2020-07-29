@@ -82,7 +82,7 @@ include_once './includes/templates/header.php'; ?>
 
                                     ?>
 
-                                        <tr>
+                                        <tr id="tr-delete-<?php echo $plate['id_plate'] ?>">
                                             <td class="">
                                                 <a href="#" data-id="<?php echo $plate['id_plate'] ?>" data-type="menu" class="badge badge-pill badge-danger options delete p-2 mb-1 d-block">
                                                     Delete &nbsp; <i class="fa fa-trash"></i>

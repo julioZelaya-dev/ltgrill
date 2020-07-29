@@ -60,8 +60,23 @@ $(document).ready(function() {
         format: 'LT'
     });
 
-    if ($('#list_table')) {
+    if ($('#list_table') || $('.list_table')) {
         $('#list_table').DataTable({
+            "paging": true,
+            "pageLength": 10,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+            "dom": 'Bfrtip',
+            "buttons": [
+                'copy', 'csv', 'pdf'
+            ]
+        });
+
+        $('.list_table').DataTable({
             "paging": true,
             "pageLength": 10,
             "lengthChange": false,
@@ -210,7 +225,7 @@ $(document).ready(function() {
 
                 success: function(data) {
                     hideLoader();
-                    console.log(data);
+                    //console.log(data);
                     var result = data;
                     if (result.response == 'success') {
                         Swal.fire(
@@ -273,14 +288,71 @@ $(document).ready(function() {
                     success: function(data) {
 
                         const result = JSON.parse(data);
-                        console.log(result);
+                        //console.log(result);
                         if (result.response == 'success') {
                             Swal.fire({
-                                icon: 'success',
-                                title: 'Deleted',
-                                text: 'Deleted',
+                                    icon: 'success',
+                                    title: 'Deleted',
+                                    text: 'Deleted',
+                                })
+                                //jQuery('[data-id="' + result.id_deleted + '"]').parents('tr').remove();
+                            $('#list_table').DataTable().row('#tr-delete-' + result.id_deleted).remove().draw();
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error',
+                                text: 'There was an error',
                             })
-                            jQuery('[data-id="' + result.id_deleted + '"]').parents('tr').remove().draw();
+                        }
+                    }
+                })
+            }
+        })
+
+
+
+
+
+    });
+    $('.list_table').on('click', '.delete', function(e) {
+        e.preventDefault();
+        // estas variables se utilizan para acceder a las propiedades del <a>
+        // estas propiedades son personalizadas 
+        let id = $(this).attr('data-id');
+        let type = $(this).attr('data-type');
+        let img = $(this).attr('data-img');
+        Swal.fire({
+            title: '¿are you sure?',
+            text: "this action cannot be undone",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'OK, Delete it!',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.value) {
+
+                $.ajax({
+                    type: 'post',
+                    data: {
+                        'id': id,
+                        'img': img,
+                        'action': 'delete'
+                    },
+                    url: 'includes/models/' + type + '.php',
+                    success: function(data) {
+
+                        const result = JSON.parse(data);
+                        //console.log(result);
+                        if (result.response == 'success') {
+                            Swal.fire({
+                                    icon: 'success',
+                                    title: 'Deleted',
+                                    text: 'Deleted',
+                                })
+                                //jQuery('[data-id="' + result.id_deleted + '"]').parents('tr').remove();
+                            $('.list_table').DataTable().row('#tr-delete-' + result.id_deleted).remove().draw();
                         } else {
                             Swal.fire({
                                 icon: 'error',
@@ -386,7 +458,7 @@ $(document).ready(function() {
 
                 success: function(data) {
                     hideLoader();
-                    console.log(data);
+                    //console.log(data);
                     var result = data;
 
                     if (result.response == 'taken') {
@@ -485,7 +557,7 @@ $(document).ready(function() {
 
                 success: function(data) {
                     hideLoader();
-                    console.log(data);
+                    //console.log(data);
                     var result = data;
 
                     if (result.response == 'success') {
@@ -576,7 +648,7 @@ $(document).ready(function() {
 
                 success: function(data) {
                     hideLoader();
-                    console.log(data);
+                    //console.log(data);
                     var result = data;
 
                     if (result.response == 'success') {
@@ -663,8 +735,8 @@ $(document).ready(function() {
             showLoader();
             e.preventDefault();
             var datos = $(this).serializeArray();
-            // console.log(datos);
-            //console.log(datos);
+            // //console.log(datos);
+            ////console.log(datos);
             $.ajax({
                 type: $(this).attr('method'),
                 data: datos,
@@ -674,7 +746,7 @@ $(document).ready(function() {
                     hideLoader();
                     //clear_reservations();
 
-                    console.log(data);
+                    //console.log(data);
                     var result = data;
                     if (result.response == 'success') {
                         Swal.fire(

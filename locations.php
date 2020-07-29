@@ -44,7 +44,7 @@
                         <div class="row mt-4">
                             <div class="col-md-12">
                                 <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></span></a>
+                                <a class="btn bg-c-orange" href="reservations.php" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></span></a>
                                 <a class="btn bg-c-orange" href="menu.php?location=1" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                         <div class="row mt-4">
                             <div class="col-md-12">
                                 <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-arlington" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a class="btn bg-c-orange" href="reservations.php" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
                                 <a class="btn bg-c-orange" href="menu.php?location=2" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                         <div class="row mt-4">
                             <div class="col-md-12">
                                 <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a class="btn bg-c-orange" href="reservations.php" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
                                 <a class="btn bg-c-orange" href="menu.php?location=3" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
@@ -156,7 +156,9 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <a target="blank" class="btn bg-c-orange" href="#" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
+                                <a target="blank" class="btn bg-c-orange" href="https://www.clover.com/online-ordering/los-tios-grill-leesburg-leesburg" role="button">Order Online &nbsp;<span class="fas fa-shopping-basket"></span></a>
+
+                                <a class="btn bg-c-orange" href="reservations.php" role="button">Reservation &nbsp;<span class="fas fa-calendar-alt"></a>
                                 <a class="btn bg-c-orange" href="menu.php?location=4" role="button">Menu &nbsp;<span class="fas fa-utensils"></span></a>
                             </div>
                         </div>
@@ -172,6 +174,7 @@
                             <div class="col-md-12">
                                 <a target="blank" class="btn bg-c-orange get-loc" href="https://www.google.com/maps/place/Los+Tios+Grill/@39.112929,-77.563214,16z/data=!4m5!3m4!1s0x0:0x2074f320091bbacb!8m2!3d39.1129287!4d-77.5632141?hl=es-419" role="button">Get directions &nbsp;<span class="fas fa-compass"></span></a>
                             </div>
+
 
                         </div>
                     </div>

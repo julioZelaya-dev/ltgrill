@@ -54,7 +54,7 @@ try {
             <a href="reservations.php">Reservations</a>
         </li>
         <li class="menu-item-nav">
-            <a href="gift-cards.php">Gift cards</a>
+            <a href="#">Gift cards</a>
         </li>
 
         <li class="menu-item-nav">
@@ -76,9 +76,11 @@ try {
                 </svg>
             </a>
             <ol class="sub-menu rounded-bottom">
-                <li class="sub-menu-item "> <a href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria">Del Ray</a></li>
-                <li class=" sub-menu-item "> <a href=" https://www.clover.com/online-ordering/los-tios-grill-arlington ">CRYSTAL CITY</a></li>
-                <li class=" sub-menu-item "> <a href=" https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria ">VAN DORN</a></li>
+                <li class="sub-menu-item "> <a target="_blank" href="https://www.clover.com/online-ordering/los-tios-grill-restauran-alexandria">Del Ray</a></li>
+                <li class=" sub-menu-item "> <a target="_blank" href=" https://www.clover.com/online-ordering/los-tios-grill-arlington ">CRYSTAL CITY</a></li>
+                <li class=" sub-menu-item "> <a target="_blank" href=" https://www.clover.com/online-ordering/los-tios-grill-van-dorn-alexandria ">VAN DORN</a></li>
+                <li class=" sub-menu-item "> <a target="_blank" href="https://www.clover.com/online-ordering/los-tios-grill-leesburg-leesburg">LEESBURG</a></li>
+
             </ol>
         </li>
     </ol>

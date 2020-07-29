@@ -140,7 +140,9 @@ include_once './includes/templates/header.php'; ?>
                                         <?php
                                         try {
                                             require_once('../includes/functions/bd_conn.php');
-                                            $sql = "SELECT * FROM plate_categories";
+                                            $location = $_SESSION['location'];
+                                            $sql = "SELECT * FROM plate_categories WHERE id_location = $location ORDER BY cat_name ASC";
+
                                             $result = $conn->query($sql);
                                         } catch (Exception $e) {
                                             echo $e->getMessage();

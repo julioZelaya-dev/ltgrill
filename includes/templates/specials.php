@@ -1,6 +1,6 @@
 <section class="specials container animate__animated animate__fadeIn">
 
-    <h2> Today <span>specials</span></h2>
+    <h2> Daily <span>specials</span></h2>
 
 
     <ul class="nav nav-pills mb-5 " id="pills-tab" role="tablist">
@@ -102,7 +102,7 @@
                 INNER JOIN location
                 ON menu.id_location = location.id
                 WHERE menu.id_location = $id_location
-                AND plate_categories.id_cat = 1 ";
+                AND plate_categories.id_cat = 59 ";
 
                 $resultado = $conn->query($sql);
             } catch (Exception $e) {
@@ -161,7 +161,7 @@
                 INNER JOIN location
                 ON menu.id_location = location.id
                 WHERE menu.id_location = $id_location
-                AND plate_categories.id_cat = 1 ";
+                AND plate_categories.id_cat = 60 ";
 
                 $resultado = $conn->query($sql);
             } catch (Exception $e) {
@@ -220,7 +220,7 @@
                 INNER JOIN location
                 ON menu.id_location = location.id
                 WHERE menu.id_location = $id_location
-                AND plate_categories.id_cat = 1 ";
+                AND plate_categories.id_cat = 61 ";
 
                 $resultado = $conn->query($sql);
             } catch (Exception $e) {

@@ -5,11 +5,12 @@ include_once '../../../includes/functions/bd_conn.php';
 if ($_POST['action'] == 'create') {
     //die(json_encode($_POST));
     $name = $_POST['name'];
+    $location = $_POST['location'];
 
     try { //throw $th;
 
-        $stmt = $conn->prepare('INSERT INTO plate_categories (cat_name) VALUES (?)');
-        $stmt->bind_param('s', $name);
+        $stmt = $conn->prepare('INSERT INTO plate_categories (cat_name, id_location) VALUES (?, ?)');
+        $stmt->bind_param('si', $name, $location);
 
         $stmt->execute();
         $id_insert = $stmt->insert_id;

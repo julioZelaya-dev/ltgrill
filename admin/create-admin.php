@@ -92,11 +92,11 @@
                                             </span>
                                         </div>
                                         <select class="form-control select2" name="location" id="location">
-                                            <option selected="selected" value="5">All</option>
+
                                             <?php while ($location = $resultado->fetch_assoc()) {
 
                                                 if ((int) $location['id'] == 1) { ?>
-                                                    <option value=" <?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
+                                                    <option selected="selected" value=" <?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
                                                 <?php } else { ?>
                                                     <option value="<?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
 

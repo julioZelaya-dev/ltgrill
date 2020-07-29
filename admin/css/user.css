@@ -131,3 +131,10 @@ table.table {
     margin-bottom: 3px;
     border-bottom: 2px solid #f8c46e!important;
 }
+
+
+/* login */
+
+.login-field {
+    font-weight: 500!important;
+}

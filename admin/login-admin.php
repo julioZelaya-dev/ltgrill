@@ -44,6 +44,7 @@ if (isset($_POST['login-admin'])) {
                     $_SESSION['img'] = $img;
                     $_SESSION['access'] = $access;
                     $_SESSION['location'] = $location;
+                    $_SESSION['time_zone'] = 'America/Managua';
 
                     $response = array(
                         'response' => 'success'

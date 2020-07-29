@@ -50,6 +50,7 @@
 
                             <div class="col-md-12 text-center mt-4">
                                 <input type="hidden" name="action" id="action" value="create">
+                                <input type="hidden" name="location" value="<?php echo $_SESSION['location']; ?>">
                                 <input id="submit-btn" class="submit" type="submit" value="Save">
                             </div>
                         </form>

@@ -9,6 +9,7 @@ if ($_POST['action'] === 'create') {
     $plate_ingredients = $_POST['plate_ingredients'];
     $plate_name = $_POST['plate_name'];
     $plate_price = $_POST['plate_price'];
+    $location = $_POST['location'];
 
     // img
     $dir = '../../../assets/img/plates/';
@@ -43,12 +44,12 @@ if ($_POST['action'] === 'create') {
 
 
         if ($_FILES['plate_img']['size'] > 0) {
-            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients, img) VALUES (?, ?, ?, ?)');
-            $stmt->bind_param('ssss', $plate_name, $plate_price, $plate_ingredients, $img_url);
+            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients, img, id_location) VALUES (?, ?, ?, ?, ?)');
+            $stmt->bind_param('ssssi', $plate_name, $plate_price, $plate_ingredients, $img_url, $location);
             $img_exist = true;
         } else {
-            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients) VALUES (?, ?, ?)');
-            $stmt->bind_param('sss', $plate_name, $plate_price, $plate_ingredients);
+            $stmt = $conn->prepare('INSERT INTO plate (plate_name, price, ingredients, id_location) VALUES (?, ?, ?, ?)');
+            $stmt->bind_param('sssi', $plate_name, $plate_price, $plate_ingredients, $location);
             $img_exist = false;
         }
         $stmt->execute();
@@ -158,7 +159,7 @@ if ($_POST['action'] === "update") {
         $stmt2->close();
         $affected = $stmt->affected_rows;
         if ($affected > 0) {
-            if ($_FILES['plate_img']['size'] > 0 && $actual_img != '') {
+            if ($_FILES['plate_img']['size'] > 0 && ($actual_img != '' || $actual_img != null)) {
                 //delete old img
                 $path = '../../../assets/img/plates/' . $actual_img;
                 //chown($path, 666);
@@ -173,7 +174,7 @@ if ($_POST['action'] === "update") {
                         'response' => 'error img'
                     );
                 }
-            } else if ((int) $_FILES['plate_img']['size'] === 0) {
+            } else if ((int) $_FILES['plate_img']['size'] === 0 || $actual_img === null || $actual_img === '') {
                 $response = array(
                     'response' => 'success-update',
                     'id_insert' => $id_plate

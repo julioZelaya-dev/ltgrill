@@ -388,6 +388,16 @@ ol .order-sub:hover~ {
         top: 39px;
         z-index: 1;
     }
+    .menu-item-nav:hover:before {
+        position: absolute;
+        content: "";
+        border-bottom: 2.5px solid var(--maincolorlight);
+        overflow: hidden;
+        width: 40%;
+        left: 30%;
+        top: 39px;
+        z-index: 1;
+    }
     .menu-item-nav:nth-child(n+9):before {
         content: none;
     }

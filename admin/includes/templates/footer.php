@@ -1,4 +1,4 @@
-<div class="app-wrapper-footer " style="position: fixed; bottom: 0; width: 100%; ">
+<div class="app-wrapper-footer " style="position: fixed; bottom: 0; width: 100%; display: none; ">
     <div class="app-footer">
         <div class="app-footer__inner">
             <div class="app-footer-left">
@@ -51,13 +51,14 @@
 <!-- notifications -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <!-- select2 -->
-<script src="../js/select2.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <!-- date picker -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!-- time picker -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
-<script src="js/app.js?v=8"></script>
+
+<script src="js/app.js?v=9"></script>
 <script type="text/javascript" src="assets/scripts/main.js"></script>
 <!-- data table-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>

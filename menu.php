@@ -69,10 +69,18 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
             <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="menu-flters">
                     <!-- <li data-filter="*" class="filter-active">Show All</li> -->
-                    <?php while ($menu_type = $resultado->fetch_assoc()) { ?>
+                    <?php
+                    while ($menu_type = $resultado->fetch_assoc()) { ?>
 
-                        <?php if ((int) $menu_type['id_cat'] == 1) : ?>
-                            <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>" class="filter-active"><?php echo $menu_type['cat_name'] ?></li>
+                        <?php if (
+                            (int) $menu_type['id_cat'] === 1 ||
+                            (int) $menu_type['id_cat'] ===  59 ||
+                            (int) $menu_type['id_cat'] === 60 ||
+                            (int) $menu_type['id_cat'] === 61
+                        ) :
+                        ?>
+                            <li data-filter=".filter-<?php echo 1;
+                                                        ?>" class="filter-active"><?php echo $menu_type['cat_name'] ?></li>
                         <?php else : ?>
                             <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>"><?php echo $menu_type['cat_name'] ?></li>
                         <?php endif; ?>
@@ -105,17 +113,41 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
 
 
 
-            <?php while ($plate = $resultado->fetch_assoc()) { ?>
+            <?php while ($plate = $resultado->fetch_assoc()) {
+            ?>
 
-                <div class="col-lg-6 menu-item filter-<?php echo $plate['id_cat'] ?>">
-                    <div class="menu-content">
-                        <p><?php echo $plate['plate_name'] ?></p><span><?php echo '$ ' . $plate['price'] ?></span>
+                <?php
+                if (
+                    (int) $plate['id_cat'] === 1 ||
+                    (int) $plate['id_cat'] ===  59 ||
+                    (int) $plate['id_cat'] === 60 ||
+                    (int) $plate['id_cat'] === 61
+                ) : ?>
+                    <div class="col-lg-6 menu-item filter-1">
+                        <div class="menu-content">
+                            <p><?php echo $plate['plate_name'] ?></p><span><?php echo '$ ' . $plate['price'] ?></span>
 
+                        </div>
+                        <div class="menu-ingredients">
+                            <?php echo $plate['ingredients'] ?>
+                        </div>
                     </div>
-                    <div class="menu-ingredients">
-                        <?php echo $plate['ingredients'] ?>
+
+                <?php else : ?>
+
+
+                    <div class="col-lg-6 menu-item filter-<?php echo $plate['id_cat'] ?>">
+                        <div class="menu-content">
+                            <p><?php echo $plate['plate_name'] ?></p><span><?php echo '$ ' . $plate['price'] ?></span>
+
+                        </div>
+                        <div class="menu-ingredients">
+                            <?php echo $plate['ingredients'] ?>
+                        </div>
                     </div>
-                </div>
+
+                <?php endif; ?>
+
 
             <?php } ?>
 

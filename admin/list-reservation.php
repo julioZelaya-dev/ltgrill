@@ -54,10 +54,11 @@ include_once './includes/templates/header.php'; ?>
                                 <tbody>
                                     <?php
                                     try {
-                                        $reservation_list = "SELECT *
-                                    FROM reservation
-                                    WHERE reservation.id_location = $location
-                                    ORDER BY reservation.reservation_time";
+                                        $reservation_list = "SELECT
+                                        reservation.*
+                                      FROM reservation
+                                      WHERE reservation.id_location = $location
+                                      ORDER BY reservation.reservation_date DESC, reservation.reservation_time";
                                         $reservation_list = $conn->query($reservation_list);
                                     } catch (Exception $e) {
                                         //throw $th;
@@ -83,7 +84,21 @@ include_once './includes/templates/header.php'; ?>
 
                                             </td>
                                             <td><b><?php echo $res['contact_name'] ?></b></td>
-                                            <td><?php echo $res['reservation_date']; ?></td>
+                                            <td>
+
+                                                <span class="btn btn-secondary">
+
+                                                    <?php echo $res['reservation_date'];
+
+                                                    date_default_timezone_set($_SESSION['time_zone']);
+                                                    $current_date = date('Y-m-d'); ?>
+
+
+                                                    <span class="badge <?php echo ($res['reservation_date'] >= (string) $current_date) ? 'badge-success' : 'badge-danger'; ?>">
+                                                        <?php echo ($res['reservation_date'] >= (string) $current_date) ? 'Active' : 'Expired'; ?>
+                                                    </span>
+                                                </span>
+                                            </td>
                                             <td><?php echo $res['reservation_time']; ?></td>
                                             <td><?php echo $res['phone']; ?></td>
                                             <td><?php echo $res['guests'] ?></td>

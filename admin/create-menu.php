@@ -42,7 +42,8 @@
                             <?php
                             try {
                                 require_once('./functions/functions.php');
-                                $sql = "SELECT * FROM plate";
+                                $location = $_SESSION['location'];
+                                $sql = "SELECT * FROM plate WHERE id_location = $location";
                                 $resultado = $conn->query($sql);
                             } catch (Exception $e) {
                                 echo $e->getMessage();

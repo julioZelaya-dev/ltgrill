@@ -51,7 +51,8 @@ include_once './includes/templates/header.php'; ?>
                                 <tbody>
                                     <?php
                                     try {
-                                        $sql = "SELECT * FROM plate ORDER BY plate_name ASC";
+                                        $location = $_SESSION['location'];
+                                        $sql = "SELECT * FROM plate WHERE id_location = $location ORDER BY plate_name ASC ";
                                         $resultado = $conn->query($sql);
                                     } catch (Exception $e) {
                                         //throw $th;
