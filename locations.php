@@ -16,7 +16,7 @@
                         <a class="nav-link active show" data-toggle="tab" href="#tab-1">Del Ray</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#tab-2">Crystal City</a>
+                        <a class="nav-link" data-toggle="tab" href="#tab-2">Arlington</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#tab-3">Van Dorn</a>
@@ -70,7 +70,7 @@
                     <div class="tab-pane" id="tab-2">
                         <div class="row mb-2">
                             <div class="col-lg-8 details order-2 order-lg-1 location-info">
-                                <h3>Crystal City</h3>
+                                <h3>Arlington</h3>
                                 <h4>Direction &nbsp;&nbsp;<span class="fas fa-map-marker-alt"></span></h4>
                                 <p>513 23rd St South Arlington, VA 22202</p>
                                 <h4>Telephone &nbsp;&nbsp;<span class="fas fa-phone"></span></h4>

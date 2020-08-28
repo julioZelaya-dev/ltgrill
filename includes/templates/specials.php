@@ -8,7 +8,7 @@
             <a class="nav-link active" id="del-ray-tab" data-toggle="pill" href="#del-ray" role="tab" aria-controls="del-ray" aria-selected="true">Del Ray</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="crystal-tab" data-toggle="pill" href="#crystal" role="tab" aria-controls="crystal" aria-selected="false">Crystal City</a>
+            <a class="nav-link" id="crystal-tab" data-toggle="pill" href="#crystal" role="tab" aria-controls="crystal" aria-selected="false">Arlington</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="van-dorn-tab" data-toggle="pill" href="#van-dorn" role="tab" aria-controls="van-dorn" aria-selected="false">Van Dorn</a>

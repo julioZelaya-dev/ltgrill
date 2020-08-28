@@ -19,7 +19,7 @@
 
 
                                    </p>
-                                   <a class="btn-hero" href="reservations.php">View our Locations Info &nbsp;<i class="fas fa-map-marker-alt"></i></a></p>
+                                   <a class="btn-hero" href="locations.php">View our Locations Info &nbsp;<i class="fas fa-map-marker-alt"></i></a></p>
                                </div>
                            </div>
                        </div>
