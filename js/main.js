@@ -472,7 +472,23 @@ $(document).ready(function() {
     }, "Please enter a valid time in 12-hour am/pm format");
 
 
+    //back to top on menu
 
+    $(".gototop").gototop({
+
+        // where to scroll back to
+        position: 0,
+
+        // animation speed
+        duration: 1000,
+
+        // cusotm css class
+        classname: "isvisible",
+
+        // where to display the button
+        visibleAt: 500
+
+    });
 
 
 });

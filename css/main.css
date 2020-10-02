@@ -546,6 +546,25 @@ section.container {
     border-radius: 10px;
 }
 
+.complete-menu {
+    font-family: var(--font-1);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    margin: 0 3px 10px 3px;
+    transition: all ease-in-out 0.5s;
+    background: #fff;
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+}
+
+.complete-menu:hover {
+    color: #fff;
+    background: var(--orange);
+}
+
 .menu-content {
     font-size: 1.2rem
 }

@@ -1,19 +1,12 @@
 <?php
+error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 $id_location = $_GET['location'];
 // validacion con filtros, si es INT?
 
 
 
 
-if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
-
-    <div class="container">
-        <h4 class="text-center mt-5 text-uppercase">
-            <?php echo "There was an error"; ?>
-
-        </h4>
-    </div>
-<?php
+if (!filter_var($id_location, FILTER_VALIDATE_INT)) {
     // Redirect browser 
     header("Location: menu.php?location=5");
 
@@ -38,6 +31,10 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
                 <?php } ?>
 
             </div>
+        </div>
+
+        <div class="row">
+            <a href="#" class="gototop"><i class="fas fa-chevron-up"></i></a>
         </div>
     <?php endif ?>
     <?php if ($id_location < 5) : ?>
@@ -100,6 +97,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
                                 <li data-filter=".filter-<?php echo $menu_type['id_cat'] ?>"><?php echo $menu_type['cat_name'] ?></li>
                             <?php endif; ?>
                         <?php } ?>
+
                     </ul>
                 </div>
             </div>
@@ -165,6 +163,10 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) { ?>
 
 
                 <?php } ?>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12"><a class="btn text-center complete-menu" href="menu.php?location=5">COMPLETE MENU</a></div>
 
             </div>
 
