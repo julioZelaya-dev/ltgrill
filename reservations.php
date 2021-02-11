@@ -126,7 +126,7 @@ try {
                                 <i class="fas fa-users"></i>
                             </span>
                         </div>
-                        <input type="number" name="guest" id="guest" min="1" max="85" class="form-control" placeholder="Up to 85 guests">
+                        <input type="number" name="guest" id="guest" min="1" max="30" class="form-control" placeholder="Up to 30 guests">
 
                     </div>
                 </div>

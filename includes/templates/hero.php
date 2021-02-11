@@ -41,10 +41,14 @@
                            <!-- <div class="carousel-background"><img src="assets/img/slide/5.jpg" alt=""></div> -->
                            <div class="carousel-container">
                                <div class="carousel-content">
-                                   <p class="animated fadeInUp">YOUR FAVORITE DISHES & MARGARITAS ARE AVAILABLE WITH YOUR CARRY OUT
+                                   <p class="animated fadeInUp">YOUR FAVORITE DISHES & MARGARITAS ARE AVAILABLE TO TAKE HOME
                                    </p>
                                    <a class="btn-hero" href="menu.php?location=1">Check our Menus &nbsp;<i class="fas fa-utensils"></i></a>
                                </div>
+
+
+
+                               
                            </div>
                        </div>
 

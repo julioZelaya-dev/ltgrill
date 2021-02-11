@@ -43,7 +43,7 @@ include_once './includes/templates/header.php'; ?>
                                         <th>Action</th>
                                         <th>Name</th>
                                         <th>Price</th>
-                                        <th>Ingredients</th>
+                                        <th>Description</th>
                                         <th>Image</th>
                                         <th>Categories</th>
                                     </tr>

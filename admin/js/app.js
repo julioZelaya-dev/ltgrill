@@ -168,7 +168,7 @@ $(document).ready(function() {
 
                 },
                 plate_ingredients: {
-                    required: true
+                    required: false
                 },
                 'plate_categories[]': {
                     required: true,
@@ -698,7 +698,7 @@ $(document).ready(function() {
                 guest: {
                     required: true,
                     number: true,
-                    range: [1, 85]
+                    range: [1, 30]
                 },
                 hora_evento: {
                     required: true,

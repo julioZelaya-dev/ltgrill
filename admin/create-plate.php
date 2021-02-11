@@ -55,8 +55,8 @@ include_once './includes/templates/header.php'; ?>
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="position-relative form-group">
-                                        <label class="label-c" for="plate_ingredients" class="">Ingredients:</label>
-                                        <textarea name="plate_ingredients" id="plate_ingredients" class="form-control" placeholder="Ingredients..."></textarea>
+                                        <label class="label-c" for="plate_ingredients" class="">Description:</label>
+                                        <textarea name="plate_ingredients" id="plate_ingredients" class="form-control" placeholder="Description..."></textarea>
                                     </div>
                                 </div>
                             </div>
