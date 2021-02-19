@@ -26,6 +26,7 @@ showLoader();
 hidetable();
 
 
+
 $(document).ready(function() {
     showtable();
     // bootstrap file input
@@ -126,6 +127,8 @@ $(document).ready(function() {
     $("#img").change(function() {
         readURL(this);
     });
+
+
 
 
 
@@ -698,7 +701,7 @@ $(document).ready(function() {
                 guest: {
                     required: true,
                     number: true,
-                    range: [1, 30]
+                    range: [1, 25]
                 },
                 hora_evento: {
                     required: true,

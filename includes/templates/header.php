@@ -22,11 +22,11 @@
 
 
     <!-- nav bar  -->
-    <link rel="stylesheet" href="css/nav-bar.css?v=7">
+    <link rel="stylesheet" href="css/nav-bar.css?v=8">
 
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/main.css?v=8">
+    <link rel="stylesheet" href="css/main.css?v=9">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">

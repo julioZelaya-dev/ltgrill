@@ -368,7 +368,7 @@ $(document).ready(function() {
                 guest: {
                     required: true,
                     number: true,
-                    range: [1, 30]
+                    range: [1, 25]
                 },
                 hora_evento: {
                     required: true,
@@ -396,7 +396,7 @@ $(document).ready(function() {
             },
             messages: {
                 guest: {
-                    required: "Please enter a number from 1 to 30",
+                    required: "Please enter a number from 1 to 25",
 
                 },
                 hora_evento: {

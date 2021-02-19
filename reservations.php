@@ -104,7 +104,7 @@ try {
                                     <div class="input-group-text">
                                         <i class="fas fa-clock"></i></div>
                                 </div>
-                                <input name="time" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker" value="11:00 AM" />
+                                <input name="time" type="text" class="form-control datetimepicker-input" data-target="#timepicker" data-toggle="datetimepicker"  />
 
 
                             </div>
@@ -126,7 +126,7 @@ try {
                                 <i class="fas fa-users"></i>
                             </span>
                         </div>
-                        <input type="number" name="guest" id="guest" min="1" max="30" class="form-control" placeholder="Up to 30 guests">
+                        <input type="number" name="guest" id="guest" size="2" maxlength="2" min="1" max="25" class="form-control" placeholder="Up to 25 guests">
 
                     </div>
                 </div>
@@ -141,7 +141,7 @@ try {
                             </span>
                         </div>
 
-                        <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="(703) 647-9702">
+                        <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Phone">
                     </div>
                 </div>
 

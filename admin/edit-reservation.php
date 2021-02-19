@@ -192,7 +192,7 @@ if (!filter_var($id, FILTER_VALIDATE_INT) || empty($id)) {
                                         <i class="fas fa-users"></i>
                                     </span>
                                 </div>
-                                <input type="number" name="guest" id="guest" min="1" max="30" class="form-control" placeholder="Up to 30 guests" value="<?php echo $reservation['guests'] ?>">
+                                <input type="number" name="guest" id="guest" min="1" max="25" class="form-control" placeholder="Up to 25 guests" value="<?php echo $reservation['guests'] ?>">
 
                             </div>
                         </div>

@@ -593,7 +593,7 @@ section.container {
 }
 
 .menu .menu-content {
-    margin-top: 30px;
+    margin-top: 15px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -617,6 +617,8 @@ section.container {
     background-color: #ffffff;
     border-radius: 10px;
     font-family: var(--font-1);
+    margin-bottom: 20px;
+    padding-bottom: 1.3rem;
 }
 
 .menu .menu-content p {
@@ -642,7 +644,8 @@ section.container {
 .menu .menu-ingredients {
     font-style: italic;
     font-size: 1.1rem;
-    color: #948c81;
+    color: #000000!important;
+    font-weight: 500;
 }
 
 

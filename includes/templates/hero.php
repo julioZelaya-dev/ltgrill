@@ -14,7 +14,7 @@
                            <div class="carousel-container">
                                <div class="carousel-content">
                                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-                                   <p class="animated fadeInUp">ENJOY OUR OUTSIDE SITTING IN ANY OR OUR LOCATIONS
+                                   <p class="animated fadeInUp">ENJOY OUR OUTSIDE SITTING IN ANY OF OUR LOCATIONS
 
 
 

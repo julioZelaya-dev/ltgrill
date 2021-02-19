@@ -53,9 +53,9 @@ try {
         <li class="menu-item-nav">
             <a href="reservations.php">Reservations</a>
         </li>
-        <li class="menu-item-nav">
+        <!-- <li class="menu-item-nav">
             <a href="#">Gift cards</a>
-        </li>
+        </li> -->
 
         <li class="menu-item-nav">
             <a href="offers.php">Get offers</a>

@@ -166,7 +166,7 @@
                                         <i class="fas fa-users"></i>
                                     </span>
                                 </div>
-                                <input type="number" name="guest" id="guest" min="1" max="30" class="form-control" placeholder="Up to 30 guests">
+                                <input type="number" name="guest" id="guest" min="1" max="25" class="form-control" placeholder="Up to 25 guests">
 
                             </div>
                         </div>

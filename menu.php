@@ -138,7 +138,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) {
                     ) : ?>
                         <div class="col-lg-6 menu-item filter-1">
                             <div class="menu-content">
-                                <p><?php echo $plate['plate_name'] ?></p><span><?php echo '$ ' . $plate['price'] ?></span>
+                                <p class="m-0 text-primary"><?php echo $plate['plate_name'] ?></p><span class="m-0"><?php echo '$ ' . $plate['price'] ?></span>
 
                             </div>
                             <div class="menu-ingredients">
@@ -151,7 +151,7 @@ if (!filter_var($id_location, FILTER_VALIDATE_INT)) {
 
                         <div class="col-lg-6 menu-item filter-<?php echo $plate['id_cat'] ?>">
                             <div class="menu-content">
-                                <p><?php echo $plate['plate_name'] ?></p><span><?php echo '$ ' . $plate['price'] ?></span>
+                                <p class="m-0 text-primary"><?php echo $plate['plate_name'] ?></p ><span class="m-0"><?php echo '$ ' . $plate['price'] ?></span>
 
                             </div>
                             <div class="menu-ingredients">

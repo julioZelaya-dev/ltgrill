@@ -93,6 +93,7 @@ body .nav-menu {
     -webkit-transition: 0.45s ease all 0.1s;
     transition: 0.45s ease all 0.1s;
     z-index: 7;
+    padding-top: 10px!important;
 }
 
 .sub-menu .menu-item-nav {
@@ -180,7 +181,7 @@ body .nav-menu {
 
 /* order sub menu  */
 
-.menu-item-nav:nth-child(n+9)>a {
+.menu-item-nav:nth-child(n+8)>a {
     -webkit-transition: all 500ms linear;
     -moz-transition: all 500ms linear;
     -o-transition: all 500ms linear;
@@ -200,23 +201,23 @@ ol .order-sub:hover~ {
     color: var(--maincolorlight)!important;
 }
 
-.menu-item-nav:nth-child(n+9):before {
+.menu-item-nav:nth-child(n+8):before {
     content: none;
 }
 
-.menu-item-nav:nth-child(n+9)>a:hover {
+.menu-item-nav:nth-child(n+8)>a:hover {
     background-color: transparent;
     color: rgb(255, 255, 255);
 }
 
-.menu-item-nav:nth-child(n+9) .plus-icon {
+.menu-item-nav:nth-child(n+8) .plus-icon {
     width: 10px;
     height: 10px;
     stroke: var(--maincolorlight);
     margin-bottom: 1px;
 }
 
-.menu-item-nav:nth-child(n+9) .sub-menu-item {
+.menu-item-nav:nth-child(n+8) .sub-menu-item {
     list-style-type: none;
     display: block;
     margin: 15px;
@@ -229,23 +230,23 @@ ol .order-sub:hover~ {
     visibility: hidden;
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu {
+.menu-item-nav:nth-child(n+8):hover .sub-menu {
     max-height: 200px;
     min-width: 150px;
     max-width: 150px;
     opacity: 1;
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu-item a {
+.menu-item-nav:nth-child(n+8):hover .sub-menu-item a {
     -webkit-transition: 0.15s ease all;
     transition: 0.15s ease all;
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu-item a:hover {
+.menu-item-nav:nth-child(n+8):hover .sub-menu-item a:hover {
     color: var(--maincolordark);
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu-item:first-child {
+.menu-item-nav:nth-child(n+8):hover .sub-menu-item:first-child {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
@@ -254,7 +255,7 @@ ol .order-sub:hover~ {
     visibility: visible;
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu-item:nth-child(2) {
+.menu-item-nav:nth-child(n+8):hover .sub-menu-item:nth-child(2) {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
@@ -263,7 +264,7 @@ ol .order-sub:hover~ {
     visibility: visible;
 }
 
-.menu-item-nav:nth-child(n+9):hover .sub-menu-item:nth-child(3) {
+.menu-item-nav:nth-child(n+8):hover .sub-menu-item:nth-child(3) {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
@@ -368,10 +369,10 @@ ol .order-sub:hover~ {
         stroke: var(--maincolordark);
     }
     .nav-menu.open .menu-item-nav:nth-child(1):hover .sub-menu-item {
-        margin: 10px auto;
+        margin: 5px auto;
     }
     .nav-menu.open .menu-item-nav:nth-child(8):hover .sub-menu-item {
-        margin: 10px auto;
+        margin: 5px auto;
     }
     .menu-item-nav {
         display: none;
@@ -398,7 +399,7 @@ ol .order-sub:hover~ {
         top: 39px;
         z-index: 1;
     }
-    .menu-item-nav:nth-child(n+9):before {
+    .menu-item-nav:nth-child(n+8):before {
         content: none;
     }
     .sub-menu {
@@ -428,18 +429,30 @@ ol .order-sub:hover~ {
         transition-delay: 0s;
     }
     /* order online */
-    .menu-item-nav:nth-child(n+9):hover .sub-menu-item:nth-child(n+9) {
+    .menu-item-nav:nth-child(n+8):hover .sub-menu-item:nth-child(n+8) {
         -webkit-transition-delay: 0s;
         transition-delay: 0s;
     }
-    .menu-item-nav:nth-child(n+9) .sub-menu-item a,
+    .menu-item-nav:nth-child(n+8) .sub-menu-item a,
     .menu-item-nav:nth-child(n+2) .sub-menu-item a {
         margin: 0px;
         font-size: 18px;
         font-weight: 500;
     }
-    .menu-item-nav:nth-child(n+9) .sub-menu-item:nth-child(n+9) {
+    .menu-item-nav:nth-child(n+8) .sub-menu-item:nth-child(n+8) {
         -webkit-transition-delay: 0s;
         transition-delay: 0s;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu-item-nav {
+        margin: 10px auto;
+    }
+    h2 {
+        font-size: 20px!important;
+    }
+    .menu-item-nav:nth-child(n+8)>a {
+        padding: 5px;
     }
 }

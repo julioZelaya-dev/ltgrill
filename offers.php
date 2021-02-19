@@ -12,7 +12,7 @@
 
             <form action="https://000webhostapp.us18.list-manage.com/subscribe/post?u=dc88022e6275a4f2a8521f641&amp;id=e99d7cf261" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-7 mx-auto" target="_blank" novalidate>
                 <div class="row shadow rounded pb-3 ">
-                    <h3 class="bg-c-orange col-md-12 text-white rounded-top text-center pt-2 pb-2 text-uppercase">subscribe to get the best deals</h2>
+                    <h3 class="bg-c-orange col-md-12 text-white rounded-top text-center pt-2 pb-2 text-uppercase">Sign Up with us to receive Offers, Promotions, Discounts and News.</h2>
                         <div class="col-md-12 ">
                             <p class="text-right"><span class="text-danger">*</span> indicates required</p>
                         </div>

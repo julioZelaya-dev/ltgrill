@@ -7,20 +7,20 @@ $(document).ready(function() {
     //tl.staggerFromTo(links, 0.4, { autoAlpha: 0 }, { autoAlpha: 1, ease: Sine.easeInOut }, 0.2);
     links[1].addEventListener('mouseenter', function() {
         TweenMax.to(pIcon[0], 0.4, { rotation: -45, ease: Power1.easeIn });
-        TweenMax.to('#lineGroup_1', 0.20, { attr: { 'stroke-dashoffset': '8', 'stroke-dasharray': '8' }, ease: Power1.easeIn });
+        TweenMax.to('#lineGroup_1', 0.20, { attr: { 'stroke-dashoffset': '7', 'stroke-dasharray': '7' }, ease: Power1.easeIn });
     });
     links[1].addEventListener('mouseleave', function() {
         TweenMax.to(pIcon[0], 0.4, { rotation: 0, ease: Power1.easeIn });
         TweenMax.to('#lineGroup_1', 0.20, { attr: { 'stroke-dashoffset': '0', 'stroke-dasharray': '0' }, ease: Power1.easeIn });
     });
-    links[8].addEventListener('mouseenter', function() {
+    links[7].addEventListener('mouseenter', function() {
         TweenMax.to(pIcon[1], 0.4, { rotation: -45, ease: Power1.easeIn });
-        TweenMax.to('#lineGroup_2', 0.20, { attr: { 'stroke-dashoffset': '8', 'stroke-dasharray': '8' }, ease: Power1.easeIn });
+        TweenMax.to('#lineGroup_2', 0.20, { attr: { 'stroke-dashoffset': '7', 'stroke-dasharray': '7' }, ease: Power1.easeIn });
         $('#orders').addClass('transparent-c');
 
 
     });
-    links[8].addEventListener('mouseleave', function() {
+    links[7].addEventListener('mouseleave', function() {
         TweenMax.to(pIcon[1], 0.4, { rotation: 0, ease: Power1.easeIn });
         TweenMax.to('#lineGroup_2', 0.20, { attr: { 'stroke-dashoffset': '0', 'stroke-dasharray': '0' }, ease: Power1.easeIn });
         $('#orders').removeClass('transparent-c');
