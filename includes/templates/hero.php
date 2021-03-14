@@ -10,7 +10,7 @@
                    <div class="carousel-inner" role="listbox">
 
                        <!-- Slide 1 -->
-                       <div class="carousel-item active" style="background-image: url(assets/img/slide/5.jpg);">
+                       <div class="carousel-item active" style="background-image: url(assets/img/slide/5.jpeg);">
                            <div class="carousel-container">
                                <div class="carousel-content">
                                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
@@ -25,7 +25,7 @@
                        </div>
 
                        <!-- Slide 2 -->
-                       <div class="carousel-item" style="background-image: url(assets/img/slide/3.jpg);">
+                       <div class="carousel-item" style="background-image: url(assets/img/slide/3.jpeg);">
                            <div class="carousel-container">
                                <div class="carousel-content">
                                    <p class="animated fadeInUp">YOU ARE ALWAYS WELCOME TO CELEBRATE SPECIAL OCCASIONS IN OUR INSIDE ROOMS
@@ -37,7 +37,7 @@
                        </div>
 
                        <!-- Slide 3 -->
-                       <div class="carousel-item" style="background-image: url(assets/img/slide/1.jpg);">
+                       <div class="carousel-item" style="background-image: url(assets/img/slide/1.jpeg);">
                            <!-- <div class="carousel-background"><img src="assets/img/slide/5.jpg" alt=""></div> -->
                            <div class="carousel-container">
                                <div class="carousel-content">

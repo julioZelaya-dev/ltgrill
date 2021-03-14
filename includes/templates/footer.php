@@ -35,7 +35,7 @@
 
                     <div class="location-footer col-md-6">
                         <h4 class="text-uppercase">
-                            <b>Crystal City</b></h4>
+                            <b>Arlington</b></h4>
                         <p>
                             <a target="blank" href="https://goo.gl/maps/hhu8Lt3LVvB6XfY8A" id="headerInfob"><b>Map & Directions</b></a>
                             <br>
@@ -137,7 +137,7 @@
 <!-- backtop -->
 <script src="js/jquery.gototop.min.js"></script>
 
-<script src="js/main.js?dev=125"></script>
+<script src="js/main.js?dev=126"></script>
 
 <!-- mailchip -->
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dc88022e6275a4f2a8521f641/b86cf85033387fa434a6bef1d.js");</script>

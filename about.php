@@ -8,6 +8,9 @@
 
     <div class="row ">
         <div class="col-md-10 mx-auto">
+
+        <div class="row">
+            <div class="col-md-8">
             <p>
                 <b>Los Tios Grill</b> describes their dishes as <b>"Fine Tex-Mex & Salvadorean Food.”</b> Los Tios could also be described as a smash hit restaurant with four locations: the first in the trendy Del Ray shopping and dining area of Alexandria,
                 followed by a second location on Van Dorn Street in Alexandria, a third in Crystal City, Arlington and recently a new fourth location in Leesburg, Virginia.
@@ -24,12 +27,24 @@
             <p>
                 The specialty of the house are the Los Tios Fajitas. The beef and chicken have been marinated with a special recipe that includes lime juice, pineapple juice and herbs. The fajitas are served with fresh flour tortillas, refried beans, rice, pico de gallo, lettuce, guacamole and sour cream. Fajita choices include chicken, beef, shrimp, vegetables or BBQ ribs. For a special treat, ask about the Super Fajita Grande for two.
             </p>
+            </div>
+            <div class="col-md-4">
+            <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-5.jpg" alt="">
+                </a>
+            </div>
+        </div>
+            
 
 
 
-
-
-            <p>
+            <div class="row">
+           
+            <div class="col-md-4">
+            <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-1.jpg" alt="">
+                </a></div>
+            <div class="col-md-8"> <p>
                 <b>Other favorites include:</b> the Los Tios Carne Asada, a 10 oz. Juicy sirloin center cut, marinated and grilled and served with garlic sauce, fried yucca, white rice, black beans and salad; the especially well done and very tender Lechoncito al Horno, morsels of pork roasted in Spanish style sauce, covered with sautéed Spanish onions, and served with white rice and black beans; Pollo Veracruz, a tasty grilled chicken breast, topped with pico de gallo and melted cheese, and served with a small salad, white rice, and black beans.
                 For the seafood lover… Los Tios offers delicious broiled tilapia filet,
                 topped with shrimp and fresh cilantro sauce, and served with white rice,
@@ -38,7 +53,10 @@
 
             <p>If you can find room for dessert, there is flan, sopaipilla, fried banana with ice cream and tres leches.</p>
 
+</div>
+            </div>
 
+           
 
             <h3 class="text-center">About the Del Ray Location</h3>
             <p>If you are coming from Crystal City, head south on Mount Vernon Avenue and pass thru Arlandria. Look for Los Tios on your left hand side with umbrellas and sidewalk dining out front.</p>
@@ -95,18 +113,28 @@
                 </a>
             </div>
             <div class="card">
-                <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
-                    <img class="card-img" src="assets/img/gallery/gallery-6.jpg" alt="">
+                <a href="assets/img/gallery/gallery-9.jpg" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-9.jpg" alt="">
                 </a>
             </div>
             <div class="card">
-                <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
-                    <img class="card-img" src="assets/img/gallery/gallery-7.jpg" alt="">
+                <a href="assets/img/gallery/gallery-10.JPG" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-10.JPG" alt="">
                 </a>
             </div>
             <div class="card">
-                <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
-                    <img class="card-img" src="assets/img/gallery/gallery-8.jpg" alt="">
+                <a href="assets/img/gallery/gallery-11.JPG" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-11.JPG" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="assets/img/gallery/gallery-12.JPG" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-12.JPG" alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="assets/img/gallery/gallery-13.JPG" class="venobox" data-gall="gallery-item">
+                    <img class="card-img" src="assets/img/gallery/gallery-13.JPG" alt="">
                 </a>
             </div>
 

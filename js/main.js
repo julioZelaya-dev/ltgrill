@@ -147,6 +147,18 @@ $(document).ready(function() {
 
     today = mm + '/' + dd + '/' + yyyy;
 
+  
+    var tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    var dd = String(tomorrow.getDate()).padStart(2, '0');
+    var mm = String(tomorrow.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = tomorrow.getFullYear();
+
+    tomorrow = mm + '/' + dd + '/' + yyyy;
+
+    
+    
+
     // Date picker
     $('#date').daterangepicker({
         "singleDatePicker": true,
@@ -154,6 +166,20 @@ $(document).ready(function() {
         "linkedCalendars": false,
         "showCustomRangeLabel": false,
         "minDate": `${today}`,
+        "startDate": "06/01/2020",
+        "endDate": "06/01/2020",
+        "opens": "right",
+        "buttonClasses": "btn btn-sm",
+        "applyButtonClasses": "bg-c-orange",
+        "cancelClass": "btn-danger"
+    });
+
+    $('#date-reservation').daterangepicker({
+        "singleDatePicker": true,
+        "showDropdowns": true,
+        "linkedCalendars": false,
+        "showCustomRangeLabel": false,
+        "minDate": `${tomorrow}`,
         "startDate": "06/01/2020",
         "endDate": "06/01/2020",
         "opens": "right",

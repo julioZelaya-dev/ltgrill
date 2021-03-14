@@ -81,7 +81,7 @@ try {
                                 <i class="far fa-calendar-alt"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control" id="date" name="date">
+                        <input type="text" class="form-control" id="date-reservation" name="date">
                     </div>
                     <!-- /.input group -->
 
@@ -176,12 +176,12 @@ try {
 
 
     <div class="col-md-9 mx-auto">
-        <h3>Special Occasions and Accommodations</h2>
+       <!--  <h3>Special Occasions and Accommodations</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis ab nostrum exercitationem quidem molestias ut. Aperiam, quaerat ipsa. Voluptatibus rerum iste tenetur natus a, aspernatur sunt culpa iusto. Molestiae.</p>
             <h3>Reserving Private Dining or Banquet Halls</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam, et repellat praesentium accusamus quis asperiores commodi, esse, nostrum dolorum atque eveniet aperiam autem tempore aliquid eligendi! Ipsum, deserunt iure!
-            </p>
+            </p> -->
     </div>
 
 
