@@ -40,15 +40,9 @@ try {
                             </span>
                         </div>
                         <select class="form-control select2" name="location" id="location">
-
-                            <?php while ($location = $resultado->fetch_assoc()) {
-                                if ((int) $location['id'] == 1) { ?>
-                                    <option value=" <?php echo $location['id']; ?>" selected="selected"><?php echo $location['name']; ?></option>
-                                <?php } else { ?>
-                                    <option value="<?php echo $location['id']; ?>"><?php echo $location['name']; ?></option>
-
-                            <?php }
-                            } ?>
+                            <option value = "1" selected = "selected">Del Ray (This location does not take Reservations for Outside Seating (Patio))</option>
+                            <option value = "3">Vandorn (This location does not take Reservations for Outside Seating (Patio))</option>    
+                           
                         </select>
                     </div>
 
