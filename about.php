@@ -4,75 +4,84 @@
 
 <section class="about container text-justify animate__animated animate__fadeIn">
 
-    <h2 class="text-center"> OUR <span> History </span> </h2>
+    <h2 class="text-center">OUR <span> History</span> </h2>
 
-    <div class="row ">
+    <div class="row">
         <div class="col-md-10 mx-auto">
 
-        <div class="row">
-            <div class="col-md-8">
-            <p>
-                <b>Los Tios Grill</b> describes their dishes as <b>"Fine Tex-Mex & Salvadorean Food.”</b> Los Tios could also be described as a smash hit restaurant with four locations: the first in the trendy Del Ray shopping and dining area of Alexandria,
-                followed by a second location on Van Dorn Street in Alexandria, a third in Crystal City, Arlington and recently a new fourth location in Leesburg, Virginia.
+            <div class="row">
+                <div class="col-md-7">
+                    <p>
+                        Out of his love of culinary arts and customer service, in May 2004 
+                        <b>Mr. German Mejia</b> embarked on his dream of opening his first restaurant in the <b>
+                            <a target="blank"
+                                href="https://www.google.com/maps/place/Los+Tios+Grill/@38.829125,-77.058897,16z/data=!4m5!3m4!1s0x0:0x8d727656f007f95c!8m2!3d38.8291248!4d-77.0588974?hl=es-419">Del
+                                Ray Area in Alexandria, Virginia.
+                            </a></b>
+                    </p>
 
-            </p>
+                    <p>
+                        As a family, with his wife and daughter and the support of his brother Adrian Mejia who was the main Chef, they worked hand in hand to create and maintain the exquisite taste and quality of the food at Los Tios Grill. And furthermore, the contribution
+                        of the Del Ray community as loyal customers of the business is an important part of the success of Los Tios Grill.
+                    </p>
 
-            <p>
-                The friendly staff will start you off with tortilla chips and their own version of salsa, and a variety of fun cold drinks. Choose from Horchata, Tamarindo, Maranon, Pina Colada or a Strawberry Daiquiri. Margaritas are a specialty and you can choose from a gold margarita, the el patron, frozen margatitas, or even home made sangria. The bar can make mix up a drink of your choice, or pour you a nice glass of wine
-            </p>
-            <p>
-                There is also a good Mexican beer selection. For starters, you might want to try a nacho platter, plantanos fritos (fried plaintains served with sour cream), or Camarones al Ajillo (sautéed shrimp with Spanish herbs, fresh garlic and cherry wine).
-            </p>
-
-            <p>
-                The specialty of the house are the Los Tios Fajitas. The beef and chicken have been marinated with a special recipe that includes lime juice, pineapple juice and herbs. The fajitas are served with fresh flour tortillas, refried beans, rice, pico de gallo, lettuce, guacamole and sour cream. Fajita choices include chicken, beef, shrimp, vegetables or BBQ ribs. For a special treat, ask about the Super Fajita Grande for two.
-            </p>
+                    <p>
+                        Due to the popularity achieved during these years and the support of the community, Mr. Mejia continued with his dream and expanded his business. In April 2008 Mr. Mejia and his family decided to open their second location in the historic town of <b>
+                            <a target="blank"
+                                href="https://www.google.com/maps/place/Los+Tios+Grill/@39.112929,-77.563214,16z/data=!4m5!3m4!1s0x0:0x2074f320091bbacb!8m2!3d39.1129287!4d-77.5632141?hl=es-419">Leesburg,
+                                Virginia.</a>
+                        </b>
+                    </p>
+                
+                </div>
+                <div class="col-md-5">
+                <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
+                        <img class="card-img" src="assets/img/gallery/gallery-10.jpg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-4">
-            <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
-                    <img class="card-img" src="assets/img/gallery/gallery-5.jpg" alt="">
-                </a>
-            </div>
-        </div>
             
-
-
-
             <div class="row">
            
-            <div class="col-md-4">
-            <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
-                    <img class="card-img" src="assets/img/gallery/gallery-1.jpg" alt="">
-                </a></div>
-            <div class="col-md-8"> <p>
-                <b>Other favorites include:</b> the Los Tios Carne Asada, a 10 oz. Juicy sirloin center cut, marinated and grilled and served with garlic sauce, fried yucca, white rice, black beans and salad; the especially well done and very tender Lechoncito al Horno, morsels of pork roasted in Spanish style sauce, covered with sautéed Spanish onions, and served with white rice and black beans; Pollo Veracruz, a tasty grilled chicken breast, topped with pico de gallo and melted cheese, and served with a small salad, white rice, and black beans.
-                For the seafood lover… Los Tios offers delicious broiled tilapia filet,
-                topped with shrimp and fresh cilantro sauce, and served with white rice,
-                black beans and vegetables). These are just a few of the dishes from the extensive menu.
-            </p>
+                <div class="col-md-5">
+                    <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
+                        <img class="card-img" src="assets/img/gallery/gallery-12.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7"> 
+                    <p>
+                        In September 2016, <b>
+                            <a target="blank"
+                                href="https://www.google.com/maps?ll=38.812083,-77.134035&z=18&t=m&hl=es-419&gl=NI&mapclient=embed&cid=4534982899752740105">Los
+                                Tios Grill of Van Dorn</a>
+                        </b> (Alexandria, VA) was opened and in recognition of his work and support, manager Godofredo received the opportunity to be a partner in the Van Dorn location.
+                    </p>
 
-            <p>If you can find room for dessert, there is flan, sopaipilla, fried banana with ice cream and tres leches.</p>
+                    <p>
+                        To continue providing customers and the community with the best services they deserve, Los Tios Grill opened their last location in <b>
+                            <a target="blank"
+                                href="https://www.google.com/maps?ll=38.85357,-77.053852&z=16&t=m&hl=es-419&gl=NI&mapclient=embed&cid=12782009959200097951">Crystal
+                                City, Arlington, Virginia</a>
+                        </b> in February 2019.
+                    </p>
 
-</div>
+                    <p>
+                        Mr. Mejia sees his dream come true by striving every day, motivates him to always give the best of himself and his work team to continue providing the attention, service, and quality of food that its loyal customers and community deserve. His preference
+                        motivates him to always give the best of himself and his work team so that you continue to enjoy the services in the locality of your preference.
+                    </p>
+
+
+                </div>
             </div>
 
            
 
-            <h3 class="text-center">About the Del Ray Location</h3>
-            <p>If you are coming from Crystal City, head south on Mount Vernon Avenue and pass thru Arlandria. Look for Los Tios on your left hand side with umbrellas and sidewalk dining out front.</p>
-
-            <p>From Old Town Alexandria, just come north on Route 1 (Jefferson Davis Hwy) over the new bridge, then left on East Custis,
-                right on Mount Vernon Avenue and up 4 blocks to Los Tios on your right.
-                If you are thinking of seeing a movie at the theater in Potomac Yards
-                and are not interested in eating big chain restaurant food,
-                Los Tios is less than a mile due west of the theater.
-                Consult this <a target="blank" href="https://www.google.com/maps/place/Los+Tios+Grill/@38.8291248,-77.0610861,17z/data=!4m5!3m4!1s0x89b7b12055cccf43:0x8d727656f007f95c!8m2!3d38.829099!4d-77.058925?hl=en">map link</a> for the route that is best for you.
-            </p>
+            <h3 class="text-center">
+                From the bottom of our heart: Thanks for the past, present and upcoming support !!!
+            </h3>
+            
         </div>
     </div>
-
-
-
 
 
 </section>
@@ -82,7 +91,7 @@
     <div class="container mb-5">
 
 
-        <h2>Some photos from <span>Our Restaurant</span></h2>
+        <h2>Some photos from <span>Our Locations</span></h2>
 
 
 
