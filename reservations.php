@@ -40,9 +40,8 @@ try {
                             </span>
                         </div>
                         <select class="form-control select2" name="location" id="location">
-                            <option value = "1" selected = "selected">Del Ray (This location does not take Reservations for Outside Seating (Patio))</option>
-                            <option value = "3">Vandorn (This location does not take Reservations for Outside Seating (Patio))</option>    
-                           
+                            <option value = "1" selected = "selected">Del Ray</option>
+                            <option value = "3">Van Dorn</option>
                         </select>
                     </div>
 
@@ -57,7 +56,7 @@ try {
                             </span>
                         </div>
 
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Your name">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
 
                     </div>
                 </div>
@@ -68,7 +67,7 @@ try {
 
 
                 <div class="form-group col-md-6">
-                    <label>Date:</label>
+                    <label>Date: <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -86,7 +85,7 @@ try {
 
 
                         <div class="form-group">
-                            <label>Time:</label>
+                            <label>Time: <span class="text-danger">*</span></label>
 
                             <div class="input-group date" id="timepicker" data-target-input="nearest">
 
@@ -135,16 +134,20 @@ try {
                             </span>
                         </div>
 
-                        <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Phone">
+                        <input type="text" name="phone_number" id="phone_number" class="form-control">
                     </div>
                 </div>
 
 
 
-                <div class="form-group col-md-9 mx-auto">
+                <div class="form-group col-md-10 mx-auto">
 
                     <label for="special_instructions">Special instructions:</label>
-                    <textarea id="special_instructions" name="special_instructions" class="form-control" rows="8" placeholder="Special instructions ..."></textarea>
+                    <textarea id="special_instructions" name="special_instructions" class="form-control" rows="6" placeholder="Special instructions ..."></textarea>
+
+                    <div class="text-center no-patio">
+                        <p>This location does not accept Reservations for Outside Seating (Patio).</p>
+                    </div>
 
 
                     <div class="form-group col-md-9 mx-auto text-center">

@@ -119,6 +119,8 @@ textarea {
     --gray: #6b7a8f;
     --be: #dcc7aa;
     --sub-title-c: #62615c;
+    --red: #af2316;
+    --blue: #232f99;
 }
 
 .bg-c-yellow {
@@ -1156,6 +1158,12 @@ label.error {
     padding: 10px;
     margin-bottom: 3px;
     border-bottom: 2px solid #f8c46e!important;
+}
+
+.no-patio p {
+    color: var(--blue);
+    font-weight: 600;
+    margin-top: 30px;
 }
 
 
